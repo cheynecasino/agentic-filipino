@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="What Kind of Filipino Support Role Should a Service Business Hire First? Visual 2">
+  <defs>
+    <linearGradient id="g114" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#071019" />
+      <stop offset="100%" stop-color="#0c1823" />
+    </linearGradient>
+    <radialGradient id="c114" cx="0.2" cy="0.2" r="0.8">
+      <stop offset="0%" stop-color="#3ee8d1" stop-opacity="0.26" />
+      <stop offset="100%" stop-color="#3ee8d1" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="y114" cx="0.8" cy="0.15" r="0.6">
+      <stop offset="0%" stop-color="#f5c657" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#f5c657" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g114)" rx="40" />
+  <rect width="1600" height="900" fill="url(#c114)" rx="40" />
+  <rect width="1600" height="900" fill="url(#y114)" rx="40" />
+  <circle cx="1320" cy="170" r="120" fill="#f5c657" opacity="0.12" />
+  <circle cx="1380" cy="220" r="52" fill="#3ee8d1" opacity="0.18" />
+  <rect x="110" y="120" width="280" height="40" rx="20" fill="rgba(62,232,209,0.12)" stroke="#3ee8d1" stroke-opacity="0.45" />
+  <text x="145" y="147" fill="#3ee8d1" font-family="Arial,Segoe UI,sans-serif" font-size="24" font-weight="700" letter-spacing="2">AGENTIC FILIPINO</text>
+  <path d="M1080 520 C1220 430 1360 430 1490 520" stroke="#3ee8d1" stroke-opacity="0.32" stroke-width="3" fill="none"/>
+  <path d="M1040 585 C1190 495 1350 500 1500 600" stroke="#f5c657" stroke-opacity="0.26" stroke-width="3" fill="none"/>
+  <path d="M1020 655 C1170 585 1340 590 1490 700" stroke="#3ee8d1" stroke-opacity="0.18" stroke-width="3" fill="none"/>
+  <text x="120" y="330" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="76" font-weight="800">What Kind of Filipino</text><text x="120" y="422" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="76" font-weight="800">Support Role Should a</text><text x="120" y="514" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="76" font-weight="800">Service Business Hire</text>
+  <text x="120" y="650" fill="#98a4b8" font-family="Arial,Segoe UI,sans-serif" font-size="32">Lead follow-up and CRM support workflow displayed on a sales dashboard</text>
+  <rect x="120" y="712" width="180" height="6" rx="3" fill="#3ee8d1" />
+  <rect x="312" y="712" width="92" height="6" rx="3" fill="#f5c657" />
+</svg>
