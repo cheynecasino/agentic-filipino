@@ -91,11 +91,10 @@ footer{border-top:1px solid var(--line);color:var(--muted);padding:34px clamp(18
     <div class="form-wrap">
       <h2>Apply now</h2>
       <p class="form-note">Complete the form clearly and professionally. If your profile fits what we are actively building for, we will contact you with the next step.</p>
-      <form action="https://formsubmit.co/sales@agenticfilipino.com" method="POST">
+      <form id="apply-form-submit-target" action="https://formsubmit.co/ajax/sales@agenticfilipino.com" method="POST">
         <input type="hidden" name="_subject" value="New Agentic Filipino candidate application">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://www.agenticfilipino.com/apply.html?thanks=1">
         <div class="form-row">
           <div><label>Full name</label><input name="full_name" required></div>
           <div><label>Email address</label><input name="email" type="email" required></div>
@@ -118,7 +117,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);padding:34px clamp(18
         <label>Expected monthly salary or hourly rate</label><input name="expected_salary">
         <label>Work setup</label><textarea name="work_setup" placeholder="Laptop/desktop, internet speed, backup internet, quiet workspace"></textarea>
         <label>Why are you a strong fit for remote work?</label><textarea name="fit_answer" required></textarea>
-        <button class="button" type="submit">Submit application</button>
+        <button class="button" id="apply-form-submit-button" type="submit">Submit application</button>
       </form>
       <div class="success" id="thanks" hidden><strong>Application received.</strong><div class="form-note">Thank you for applying. If your profile matches what we are currently building for, we will contact you with the next step.</div></div>
     </div>
@@ -146,6 +145,45 @@ if (window.location.search.indexOf("thanks=1") !== -1) {
       'currency': 'PHP'
     });
   }
+}
+var applyForm = document.getElementById("apply-form-submit-target");
+var applySubmit = document.getElementById("apply-form-submit-button");
+var applyThanks = document.getElementById("thanks");
+if (applyForm) {
+  applyForm.addEventListener("submit", async function (event) {
+    event.preventDefault();
+    if (applySubmit) {
+      applySubmit.disabled = true;
+      applySubmit.textContent = "Sending...";
+    }
+    try {
+      var response = await fetch(applyForm.action, {
+        method: "POST",
+        body: new FormData(applyForm),
+        headers: { Accept: "application/json" }
+      });
+      if (!response.ok) throw new Error("Application submission failed");
+      applyForm.reset();
+      if (applyThanks) {
+        applyThanks.hidden = false;
+        applyThanks.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+      if (window.gtag) {
+        gtag("event", "conversion", {
+          send_to: "AW-18276066095/0rvrCPW-qsYcEK_G2opE",
+          value: 1.0,
+          currency: "PHP"
+        });
+      }
+    } catch (error) {
+      window.alert("Something went wrong sending your application. Please email sales@agenticfilipino.com directly with your resume and details.");
+    } finally {
+      if (applySubmit) {
+        applySubmit.disabled = false;
+        applySubmit.textContent = "Submit application";
+      }
+    }
+  });
 }
 </script>
 </body>
