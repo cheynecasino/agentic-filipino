@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
@@ -46,9 +46,9 @@ gtag('config', 'AW-18276066095');
 .form-wrap h2{margin:0 0 10px;font-size:34px}.form-row{display:grid;gap:12px;grid-template-columns:1fr 1fr}
 label{display:block;color:var(--muted);font-size:13px;margin:12px 0 6px}
 input,select,textarea{width:100%;padding:14px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--ink)}textarea{min-height:120px;resize:vertical}
-.success{background:rgba(62,232,209,.1);border:1px solid rgba(62,232,209,.35);border-radius:16px;padding:16px;margin-top:18px}
+.success{background:rgba(62,232,209,.1);border:1px solid rgba(62,232,209,.35);border-radius:16px;padding:16px;margin-top:18px}.success-toast{position:fixed;right:24px;bottom:24px;max-width:360px;background:linear-gradient(145deg,#102232,#091620);border:1px solid rgba(62,232,209,.45);border-radius:18px;box-shadow:0 24px 60px rgba(0,0,0,.3);padding:18px 20px;z-index:20;opacity:0;transform:translateY(20px) scale(.98);pointer-events:none;transition:opacity .25s ease,transform .25s ease}.success-toast.show{opacity:1;transform:translateY(0) scale(1)}.success-toast strong{display:block;margin-bottom:6px;color:var(--cyan)}.success-toast span{display:block;color:var(--ink);line-height:1.6;font-size:14px}
 footer{border-top:1px solid var(--line);color:var(--muted);padding:34px clamp(18px,7vw,110px)}
-@media(max-width:900px){.hero,.apply-grid,.form-row,.grid{grid-template-columns:1fr}.nav nav{display:none}.actions{flex-direction:column}}
+@media(max-width:900px){.hero,.apply-grid,.form-row,.grid{grid-template-columns:1fr}.nav nav{display:none}.actions{flex-direction:column}.success-toast{left:18px;right:18px;bottom:18px;max-width:none}}
 </style>
 </head>
 <body>
@@ -91,7 +91,7 @@ footer{border-top:1px solid var(--line);color:var(--muted);padding:34px clamp(18
     <div class="form-wrap">
       <h2>Apply now</h2>
       <p class="form-note">Complete the form clearly and professionally. If your profile fits what we are actively building for, we will contact you with the next step.</p>
-      <form id="apply-form-submit-target" action="https://formsubmit.co/ajax/sales@agenticfilipino.com" method="POST">
+      <form id="apply-form-submit-target" action="https://formsubmit.co/ajax/bf293ae6852d63362544d7f957b96e47" method="POST">
         <input type="hidden" name="_subject" value="New Agentic Filipino candidate application">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
@@ -149,6 +149,20 @@ if (window.location.search.indexOf("thanks=1") !== -1) {
 var applyForm = document.getElementById("apply-form-submit-target");
 var applySubmit = document.getElementById("apply-form-submit-button");
 var applyThanks = document.getElementById("thanks");
+var applyToast = document.getElementById("success-toast");
+var applyToastTimer;
+function showApplyToast() {
+  if (!applyToast) return;
+  applyToast.hidden = false;
+  applyToast.classList.add("show");
+  window.clearTimeout(applyToastTimer);
+  applyToastTimer = window.setTimeout(function () {
+    applyToast.classList.remove("show");
+    window.setTimeout(function () {
+      applyToast.hidden = true;
+    }, 250);
+  }, 4200);
+}
 if (applyForm) {
   applyForm.addEventListener("submit", async function (event) {
     event.preventDefault();
@@ -188,3 +202,6 @@ if (applyForm) {
 </script>
 </body>
 </html>
+
+
+
