@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Operations dashboard for task tracking and reporting support">
+  <rect width="1600" height="900" rx="40" fill="#08131e" />
+  <circle cx="1280" cy="170" r="120" fill="#4df0da" opacity="0.1" />
+  <rect x="140" y="150" width="520" height="580" rx="34" fill="#0f2130" stroke="rgba(255,255,255,0.08)" />
+  <text x="190" y="238" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="44" font-weight="800">Task Visibility</text>
+  <rect x="190" y="300" width="420" height="22" rx="11" fill="rgba(255,255,255,0.1)" />
+  <rect x="190" y="352" width="360" height="22" rx="11" fill="rgba(255,255,255,0.08)" />
+  <rect x="190" y="404" width="400" height="22" rx="11" fill="rgba(255,255,255,0.08)" />
+  <rect x="190" y="486" width="160" height="58" rx="29" fill="#4df0da" />
+  <text x="236" y="523" fill="#061511" font-family="Arial,Segoe UI,sans-serif" font-size="28" font-weight="800">Review</text>
+  <rect x="760" y="150" width="700" height="580" rx="34" fill="#0d1c2a" stroke="rgba(62,232,209,0.18)" />
+  <text x="820" y="238" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="44" font-weight="800">Reporting Rhythm</text>
+  <rect x="820" y="300" width="560" height="210" rx="26" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" />
+  <path d="M876 454 C966 370 1054 402 1136 332 C1202 276 1280 302 1360 248" stroke="#4df0da" stroke-width="8" fill="none" stroke-linecap="round" />
+  <circle cx="1136" cy="332" r="10" fill="#f8d36f" />
+  <text x="820" y="584" fill="#98a4b8" font-family="Arial,Segoe UI,sans-serif" font-size="30">The right operations assistant gives leadership cleaner status,</text>
+  <text x="820" y="624" fill="#98a4b8" font-family="Arial,Segoe UI,sans-serif" font-size="30">better accountability, and less chasing.</text>
+</svg>

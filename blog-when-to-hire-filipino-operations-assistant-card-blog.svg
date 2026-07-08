@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Blog card for operations assistant guide">
+  <rect width="1200" height="675" rx="32" fill="#0d1b29" />
+  <circle cx="1025" cy="148" r="110" fill="#4df0da" opacity="0.1" />
+  <rect x="64" y="74" width="250" height="36" rx="18" fill="rgba(62,232,209,0.12)" stroke="rgba(62,232,209,0.36)" />
+  <text x="92" y="98" fill="#4df0da" font-family="Arial,Segoe UI,sans-serif" font-size="20" font-weight="700" letter-spacing="2">OPERATIONS GUIDE</text>
+  <text x="64" y="204" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="56" font-weight="800">When Coordination Needs</text>
+  <text x="64" y="270" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="56" font-weight="800">More Than Another Admin</text>
+  <text x="64" y="374" fill="#98a4b8" font-family="Arial,Segoe UI,sans-serif" font-size="28">For founders carrying too many handoffs and updates</text>
+  <rect x="64" y="522" width="162" height="6" rx="3" fill="#4df0da" />
+  <rect x="238" y="522" width="78" height="6" rx="3" fill="#f8d36f" />
+  <rect x="816" y="256" width="236" height="56" rx="28" fill="#4df0da" />
+  <text x="862" y="292" fill="#061511" font-family="Arial,Segoe UI,sans-serif" font-size="26" font-weight="800">Protect Workflow</text>
+</svg>

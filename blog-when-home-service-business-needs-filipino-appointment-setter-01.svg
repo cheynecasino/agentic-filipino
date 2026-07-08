@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="When should a home service business hire a Filipino appointment setter">
+  <defs>
+    <linearGradient id="afhs1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08131e" />
+      <stop offset="100%" stop-color="#112537" />
+    </linearGradient>
+    <radialGradient id="afhs1c" cx="0.18" cy="0.2" r="0.78">
+      <stop offset="0%" stop-color="#4df0da" stop-opacity="0.24" />
+      <stop offset="100%" stop-color="#4df0da" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="afhs1y" cx="0.84" cy="0.18" r="0.58">
+      <stop offset="0%" stop-color="#f8d36f" stop-opacity="0.22" />
+      <stop offset="100%" stop-color="#f8d36f" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" rx="40" fill="url(#afhs1)" />
+  <rect width="1600" height="900" rx="40" fill="url(#afhs1c)" />
+  <rect width="1600" height="900" rx="40" fill="url(#afhs1y)" />
+  <circle cx="1350" cy="180" r="126" fill="#f8d36f" opacity="0.11" />
+  <circle cx="1410" cy="235" r="48" fill="#4df0da" opacity="0.18" />
+  <rect x="108" y="110" width="340" height="44" rx="22" fill="rgba(62,232,209,0.12)" stroke="#4df0da" stroke-opacity="0.42" />
+  <text x="142" y="139" fill="#4df0da" font-family="Arial,Segoe UI,sans-serif" font-size="24" font-weight="700" letter-spacing="2">HOME SERVICE GROWTH GUIDE</text>
+  <rect x="1030" y="200" width="420" height="470" rx="32" fill="rgba(9,20,30,0.7)" stroke="rgba(62,232,209,0.2)" />
+  <rect x="1080" y="255" width="240" height="74" rx="22" fill="rgba(62,232,209,0.14)" stroke="#4df0da" stroke-opacity="0.38" />
+  <text x="1120" y="302" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="34" font-weight="700">New Lead</text>
+  <rect x="1080" y="360" width="320" height="22" rx="11" fill="rgba(255,255,255,0.13)" />
+  <rect x="1080" y="402" width="270" height="22" rx="11" fill="rgba(255,255,255,0.1)" />
+  <rect x="1080" y="444" width="300" height="22" rx="11" fill="rgba(255,255,255,0.1)" />
+  <rect x="1080" y="515" width="188" height="58" rx="29" fill="#4df0da" />
+  <text x="1125" y="552" fill="#061511" font-family="Arial,Segoe UI,sans-serif" font-size="28" font-weight="800">Book Call</text>
+  <circle cx="1278" cy="545" r="10" fill="#061511" opacity="0.8" />
+  <path d="M124 332h572" stroke="rgba(255,255,255,0)" />
+  <text x="120" y="330" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="72" font-weight="800">When Should a Home</text>
+  <text x="120" y="418" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="72" font-weight="800">Service Business Hire a</text>
+  <text x="120" y="506" fill="#4df0da" font-family="Arial,Segoe UI,sans-serif" font-size="72" font-weight="800">Filipino Appointment Setter?</text>
+  <text x="120" y="636" fill="#98a4b8" font-family="Arial,Segoe UI,sans-serif" font-size="32">For teams losing booked jobs because speed-to-lead and follow-up are too inconsistent</text>
+  <rect x="120" y="710" width="180" height="6" rx="3" fill="#4df0da" />
+  <rect x="314" y="710" width="96" height="6" rx="3" fill="#f8d36f" />
+</svg>

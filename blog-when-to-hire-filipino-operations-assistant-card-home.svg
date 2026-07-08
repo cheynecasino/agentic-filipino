@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Homepage card for operations assistant guide">
+  <rect width="1200" height="675" rx="32" fill="#102031" />
+  <rect x="82" y="88" width="228" height="34" rx="17" fill="rgba(62,232,209,0.12)" stroke="rgba(62,232,209,0.34)" />
+  <text x="112" y="111" fill="#4df0da" font-family="Arial,Segoe UI,sans-serif" font-size="18" font-weight="700" letter-spacing="2">WORKFLOW LIFT</text>
+  <text x="82" y="214" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="54" font-weight="800">Operations support for</text>
+  <text x="82" y="278" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="54" font-weight="800">messy founder workflows</text>
+  <rect x="82" y="470" width="160" height="6" rx="3" fill="#4df0da" />
+  <rect x="254" y="470" width="70" height="6" rx="3" fill="#f8d36f" />
+  <path d="M790 468 C902 372 1024 378 1116 466" stroke="#4df0da" stroke-opacity="0.36" stroke-width="4" fill="none" />
+  <path d="M760 542 C886 436 1026 438 1124 548" stroke="#f8d36f" stroke-opacity="0.24" stroke-width="4" fill="none" />
+  <circle cx="1018" cy="174" r="94" fill="#4df0da" opacity="0.1" />
+</svg>

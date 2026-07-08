@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Home service support dashboard with calendar and call booking coverage">
+  <defs>
+    <linearGradient id="afhs3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08121c" />
+      <stop offset="100%" stop-color="#112537" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" rx="40" fill="url(#afhs3)" />
+  <circle cx="1290" cy="180" r="140" fill="#4df0da" opacity="0.09" />
+  <circle cx="1355" cy="225" r="60" fill="#f8d36f" opacity="0.12" />
+  <rect x="120" y="130" width="1360" height="640" rx="34" fill="rgba(10,24,36,0.82)" stroke="rgba(255,255,255,0.08)" />
+  <rect x="180" y="208" width="540" height="460" rx="30" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" />
+  <text x="222" y="286" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="42" font-weight="800">Coverage Dashboard</text>
+  <rect x="222" y="334" width="220" height="120" rx="24" fill="rgba(62,232,209,0.13)" stroke="rgba(62,232,209,0.35)" />
+  <text x="258" y="390" fill="#4df0da" font-family="Arial,Segoe UI,sans-serif" font-size="24" font-weight="700">Leads Replied</text>
+  <text x="286" y="435" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="44" font-weight="800">92%</text>
+  <rect x="470" y="334" width="200" height="120" rx="24" fill="rgba(248,211,111,0.1)" stroke="rgba(248,211,111,0.3)" />
+  <text x="502" y="390" fill="#f8d36f" font-family="Arial,Segoe UI,sans-serif" font-size="24" font-weight="700">Booked Calls</text>
+  <text x="542" y="435" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="44" font-weight="800">41</text>
+  <rect x="222" y="500" width="448" height="26" rx="13" fill="rgba(255,255,255,0.08)" />
+  <rect x="222" y="500" width="368" height="26" rx="13" fill="#4df0da" />
+  <text x="222" y="560" fill="#98a4b8" font-family="Arial,Segoe UI,sans-serif" font-size="28">Lead response coverage before noon</text>
+  <rect x="830" y="208" width="590" height="460" rx="30" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" />
+  <text x="872" y="286" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="42" font-weight="800">Calendar + Follow-Up</text>
+  <g transform="translate(872 338)">
+    <rect width="470" height="250" rx="26" fill="rgba(7,16,25,0.84)" stroke="rgba(62,232,209,0.2)" />
+    <g fill="#4df0da" opacity="0.85">
+      <rect x="38" y="54" width="80" height="44" rx="14" />
+      <rect x="138" y="54" width="80" height="44" rx="14" />
+      <rect x="238" y="54" width="80" height="44" rx="14" />
+      <rect x="338" y="54" width="80" height="44" rx="14" />
+      <rect x="38" y="118" width="80" height="44" rx="14" />
+      <rect x="138" y="118" width="80" height="44" rx="14" fill="#f8d36f" opacity="0.9" />
+      <rect x="238" y="118" width="80" height="44" rx="14" />
+      <rect x="338" y="118" width="80" height="44" rx="14" />
+    </g>
+    <text x="40" y="216" fill="#98a4b8" font-family="Arial,Segoe UI,sans-serif" font-size="24">Booked estimates, callback windows, and reschedule touchpoints</text>
+  </g>
+</svg>
