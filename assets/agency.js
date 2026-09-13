@@ -1,5 +1,11 @@
 (() => {
   'use strict';
+  const production = /^(www\.)?agenticfilipino\.com$/.test(location.hostname);
+  const analyticsId = 'G-2VN98ZCYR4';
+  // The existing Google tag handles page views; do not emit another here.
+  if (production && typeof window.gtag === 'function') {
+    window.gtag('config', analyticsId, {send_page_view: false});
+  }
   const menu = document.querySelector('.af-menu');
   const links = document.querySelector('.af-links');
   function closeMenu() { links?.classList.remove('open'); menu?.setAttribute('aria-expanded','false'); }
@@ -33,7 +39,11 @@
         const message=applicant?'Application submitted. We will review your profile and contact you if there is a suitable opportunity.':'Request submitted. We will review your needs and follow up with the next step.';
         form.reset();feedback.dataset.state='success';feedback.textContent=message;feedback.hidden=false;showToast(message);
         // Local previews and job applications must never inflate paid lead counts.
-        if(!applicant && /^(www\.)?agenticfilipino\.com$/.test(location.hostname) && typeof window.gtag==='function')window.gtag('event','conversion',{send_to:'AW-18276066095/0rvrCPW-qsYcEK_G2opE'});
+        if(!applicant && production && typeof window.gtag==='function') {
+          // Send only an identifier, never names, email addresses or form answers.
+          window.gtag('event','generate_lead',{send_to:analyticsId,form_id:form.id || 'lead-form'});
+          window.gtag('event','conversion',{send_to:'AW-18276066095/0rvrCPW-qsYcEK_G2opE'});
+        }
       }catch(error){feedback.dataset.state='error';feedback.textContent='We could not confirm your submission. Your answers are still here. Please retry, or email sales@agenticfilipino.com.';feedback.hidden=false;}
       finally{clearTimeout(timeout);button.disabled=false;button.textContent=initial;}
     });
