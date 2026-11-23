@@ -545,7 +545,7 @@ button {
 .sheet--footer {
   background: var(--deep-slate);
   color: var(--ink-on-dark);
-  padding: clamp(68px, 7vw, 104px) 0 clamp(36px, 4.5vw, 56px);
+  padding: clamp(64px, 6.5vw, 92px) 0 clamp(28px, 3.5vw, 44px);
   z-index: 14;
   overflow: hidden;
 }
@@ -3820,7 +3820,7 @@ button {
 }
 
 .footer-legal {
-  padding: 24px 0 28px;
+  padding: 22px 0 18px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -3830,16 +3830,16 @@ button {
 }
 
 .footer-giant {
-  margin: 8px 0 0;
-  padding: 6px 0 10px;
+  margin: 4px 0 0;
+  padding: 4px 0;
   text-align: center;
   font-family: var(--font-serif);
-  font-size: clamp(32px, 8.8vw, 134px);
-  font-weight: 900;
+  font-size: clamp(28px, 3.8vw, 52px);
+  font-weight: 800;
   letter-spacing: -0.025em;
-  line-height: 1.08;
-  color: rgba(247, 243, 236, 0.15);
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.38), 0 1px 0 rgba(255, 255, 255, 0.04);
+  line-height: 1.12;
+  color: rgba(247, 243, 236, 0.22);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.04);
   white-space: nowrap;
   user-select: none;
 }
@@ -3847,7 +3847,7 @@ button {
 .footer-giant em {
   font-style: italic;
   font-weight: 600;
-  color: rgba(214, 130, 82, 0.28);
+  color: rgba(214, 130, 82, 0.38);
   margin-left: 0.14em;
 }
 
@@ -4154,7 +4154,7 @@ button {
 
   .footer-giant {
     margin-bottom: 0;
-    font-size: clamp(30px, 8.6vw, 44px);
+    font-size: 28px;
   }
 }
 
