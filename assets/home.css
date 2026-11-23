@@ -296,6 +296,7 @@ button {
   font-style: italic;
   font-weight: 600;
   color: var(--copper);
+  margin-left: 0.08em;
 }
 
 .nav__links {
@@ -544,7 +545,7 @@ button {
 .sheet--footer {
   background: var(--deep-slate);
   color: var(--ink-on-dark);
-  padding: clamp(68px, 7vw, 104px) 0 0;
+  padding: clamp(68px, 7vw, 104px) 0 clamp(36px, 4.5vw, 56px);
   z-index: 14;
   overflow: hidden;
 }
@@ -3819,7 +3820,7 @@ button {
 }
 
 .footer-legal {
-  padding: 24px 0 16px;
+  padding: 24px 0 28px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -3829,21 +3830,25 @@ button {
 }
 
 .footer-giant {
-  margin: 10px 0 -22px;
+  margin: 8px 0 0;
+  padding: 6px 0 10px;
   text-align: center;
   font-family: var(--font-serif);
-  font-size: clamp(50px, 11.4vw, 176px);
+  font-size: clamp(32px, 8.8vw, 134px);
   font-weight: 900;
-  letter-spacing: -0.055em;
-  line-height: 0.86;
-  color: var(--bg-alabaster);
+  letter-spacing: -0.025em;
+  line-height: 1.08;
+  color: rgba(247, 243, 236, 0.15);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.38), 0 1px 0 rgba(255, 255, 255, 0.04);
   white-space: nowrap;
   user-select: none;
 }
 
 .footer-giant em {
   font-style: italic;
-  color: var(--copper);
+  font-weight: 600;
+  color: rgba(214, 130, 82, 0.28);
+  margin-left: 0.14em;
 }
 
 /* ==========================================================================
@@ -4148,7 +4153,8 @@ button {
   }
 
   .footer-giant {
-    margin-bottom: -8px;
+    margin-bottom: 0;
+    font-size: clamp(30px, 8.6vw, 44px);
   }
 }
 
