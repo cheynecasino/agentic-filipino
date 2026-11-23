@@ -243,6 +243,118 @@
       meta.innerHTML = `<a href="/blog">← All hiring guides</a><span>&bull;</span><span>${mins} min read</span><span>&bull;</span><span>Founder-led playbook</span>`;
       hero.prepend(meta);
     }
+
+    /* Topic-matched contextual service offer inside article CTA */
+    const ctaBox = document.querySelector('.af-article .cta');
+    if (ctaBox && !ctaBox.querySelector('.af-article-offer')) {
+      const slug = `${location.pathname} ${document.title}`.toLowerCase();
+      let offer = {
+        badge: 'RECOMMENDED LANE • EXECUTIVE OPS',
+        title: 'Dedicated Filipino Executive Assistant — from $1,200/mo or $180 pilot',
+        href: '/executive-assistant-support',
+        cta: 'Explore Executive Ops →',
+      };
+      if (slug.includes('construction')) {
+        offer = {
+          badge: 'RECOMMENDED LANE • CONSTRUCTION PILOT',
+          title: '20-Hour Construction Back-Office Pilot — $180 flat',
+          href: '/construction-admin-support/',
+          cta: 'Start $180 Pilot →',
+        };
+      } else if (slug.includes('real-estate') || slug.includes('real estate')) {
+        offer = {
+          badge: 'RECOMMENDED LANE • REAL ESTATE ADMIN',
+          title: 'Real Estate Follow-Up & Listing Admin — from $1,200/mo',
+          href: '/real-estate-virtual-assistant',
+          cta: 'Explore Real Estate Lane →',
+        };
+      } else if (slug.includes('ecommerce')) {
+        offer = {
+          badge: 'RECOMMENDED LANE • ECOMMERCE OPS',
+          title: 'Ecommerce Order & Inbox Support — from $1,200/mo',
+          href: '/ecommerce-support',
+          cta: 'Explore Ecommerce Lane →',
+        };
+      } else if (slug.includes('customer-support') || slug.includes('customer support')) {
+        offer = {
+          badge: 'RECOMMENDED LANE • CUSTOMER SUPPORT',
+          title: 'Dedicated Email & Chat Support Coverage — from $1,200/mo',
+          href: '/customer-support-outsourcing',
+          cta: 'Explore Support Lane →',
+        };
+      } else if (slug.includes('lead') || slug.includes('appointment-setter') || slug.includes('speed-to-lead')) {
+        offer = {
+          badge: 'RECOMMENDED LANE • APPOINTMENT SETTING',
+          title: 'Speed-to-Lead & Appointment Setter Support — from $1,200/mo',
+          href: '/lead-generation-appointment-setter',
+          cta: 'Explore Lead Gen Lane →',
+        };
+      }
+      const strip = document.createElement('div');
+      strip.className = 'af-article-offer';
+      strip.innerHTML = `<div class="af-article-offer__meta"><span class="af-article-offer__badge">${offer.badge}</span><strong>${offer.title}</strong></div><div class="af-article-offer__actions"><a class="button" href="${offer.href}">${offer.cta}</a><a class="button ghost" href="https://calendly.com/cheynecasino/new-meeting" target="_blank" rel="noopener noreferrer">Book 15-min call</a></div>`;
+      ctaBox.appendChild(strip);
+    }
+  }
+
+  /* First-touch Attribution Capture (preserves original Google Ads / Blog landing page) */
+  try {
+    const key = 'af_attrib_v1';
+    const existing = JSON.parse(sessionStorage.getItem(key) || 'null');
+    const params = new URLSearchParams(location.search);
+    const fresh = {
+      utm_source: params.get('utm_source') || '',
+      utm_medium: params.get('utm_medium') || '',
+      utm_campaign: params.get('utm_campaign') || '',
+      utm_content: params.get('utm_content') || '',
+      utm_term: params.get('utm_term') || '',
+      gclid: params.get('gclid') || '',
+      landing_page: location.pathname + location.search,
+      referrer: document.referrer || 'direct',
+    };
+    if (!existing) {
+      sessionStorage.setItem(key, JSON.stringify(fresh));
+    } else if (fresh.gclid || fresh.utm_source || fresh.utm_campaign) {
+      sessionStorage.setItem(
+        key,
+        JSON.stringify({ ...existing, ...Object.fromEntries(Object.entries(fresh).filter(([, v]) => Boolean(v))) })
+      );
+    }
+  } catch {}
+
+  /* Mobile Sticky CTA Bar on Blog Hub & Articles (excluded on candidate Apply page) */
+  if (
+    (document.body.classList.contains('af-blog') || document.body.classList.contains('af-article')) &&
+    !document.querySelector('.af-mobile-sticky')
+  ) {
+    const stickyBar = document.createElement('div');
+    stickyBar.className = 'af-mobile-sticky';
+    stickyBar.setAttribute('aria-label', 'Quick hiring actions');
+    stickyBar.innerHTML =
+      '<a class="af-mobile-sticky__primary" href="/#contact">Free role plan →</a><a class="af-mobile-sticky__secondary" href="https://calendly.com/cheynecasino/new-meeting" target="_blank" rel="noopener noreferrer">Book call</a>';
+    document.body.append(stickyBar);
+
+    let blocked = false;
+    const syncSticky = () => {
+      stickyBar.classList.toggle('is-visible', window.scrollY > 420 && !blocked);
+    };
+    window.addEventListener('scroll', syncSticky, { passive: true });
+    if ('IntersectionObserver' in window) {
+      const vis = new Set();
+      const targets = [document.querySelector('.cta'), document.querySelector('.blog-cta'), document.querySelector('footer')].filter(Boolean);
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) vis.add(e.target);
+            else vis.delete(e.target);
+          });
+          blocked = vis.size > 0;
+          syncSticky();
+        },
+        { threshold: 0.08 }
+      );
+      targets.forEach((t) => io.observe(t));
+    }
   }
 
   /* ------------------------------------------------------------------------
