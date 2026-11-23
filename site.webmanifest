@@ -1,0 +1,17 @@
+{
+  "name": "Agentic Filipino",
+  "short_name": "Agentic Filipino",
+  "description": "Founder-led Filipino talent matching for US businesses.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FBF8F3",
+  "theme_color": "#081B22",
+  "icons": [
+    {
+      "src": "/agentic-filipino-logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
