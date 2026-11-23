@@ -1,18 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Operations dashboard for task tracking and reporting support">
-  <rect width="1600" height="900" rx="40" fill="#08131e" />
-  <circle cx="1280" cy="170" r="120" fill="#4df0da" opacity="0.1" />
-  <rect x="140" y="150" width="520" height="580" rx="34" fill="#0f2130" stroke="rgba(255,255,255,0.08)" />
-  <text x="190" y="238" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="44" font-weight="800">Task Visibility</text>
-  <rect x="190" y="300" width="420" height="22" rx="11" fill="rgba(255,255,255,0.1)" />
-  <rect x="190" y="352" width="360" height="22" rx="11" fill="rgba(255,255,255,0.08)" />
-  <rect x="190" y="404" width="400" height="22" rx="11" fill="rgba(255,255,255,0.08)" />
-  <rect x="190" y="486" width="160" height="58" rx="29" fill="#4df0da" />
-  <text x="236" y="523" fill="#061511" font-family="Arial,Segoe UI,sans-serif" font-size="28" font-weight="800">Review</text>
-  <rect x="760" y="150" width="700" height="580" rx="34" fill="#0d1c2a" stroke="rgba(62,232,209,0.18)" />
-  <text x="820" y="238" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="44" font-weight="800">Reporting Rhythm</text>
-  <rect x="820" y="300" width="560" height="210" rx="26" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" />
-  <path d="M876 454 C966 370 1054 402 1136 332 C1202 276 1280 302 1360 248" stroke="#4df0da" stroke-width="8" fill="none" stroke-linecap="round" />
-  <circle cx="1136" cy="332" r="10" fill="#f8d36f" />
-  <text x="820" y="584" fill="#98a4b8" font-family="Arial,Segoe UI,sans-serif" font-size="30">The right operations assistant gives leadership cleaner status,</text>
-  <text x="820" y="624" fill="#98a4b8" font-family="Arial,Segoe UI,sans-serif" font-size="30">better accountability, and less chasing.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Why Filipino operations talent can be a strong fit workflow diagram">
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBF8F3"/>
+      <stop offset="100%" stop-color="#F3ECE1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sbg)"/>
+  <circle cx="1440" cy="140" r="240" fill="#C2693A" fill-opacity="0.07"/>
+  <circle cx="180" cy="820" r="220" fill="#0E857D" fill-opacity="0.06"/>
+  <rect x="96" y="88" width="360" height="40" rx="20" fill="#FFFFFF" stroke="rgba(17,28,33,0.12)" stroke-width="1"/>
+  <circle cx="120" cy="108" r="5" fill="#C2693A"/>
+  <text x="138" y="114" fill="#9C4D24" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="600" letter-spacing="2">EXECUTIVE &amp; OPS • WORKFLOW</text>
+  <text x="96" y="218" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="-1.2">Why Filipino operations talent can be a</text>
+  <text x="96" y="282" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="-1.2">strong fit</text>
+
+  <rect x="96" y="380" width="446" height="390" rx="30" fill="#FFFFFF" stroke="rgba(17,28,33,0.11)" stroke-width="1.5"/>
+  <rect x="130" y="416" width="64" height="64" rx="18" fill="#F2DFD0"/>
+  <text x="162" y="456" text-anchor="middle" fill="#9C4D24" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="700">01</text>
+  <text x="130" y="538" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="-0.8">Inbox Triage</text>
+  <line x1="130" y1="566" x2="508" y2="566" stroke="rgba(17,28,33,0.09)" stroke-width="1.5"/>
+  <text x="130" y="614" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">Document the repeating drag</text>
+  <text x="130" y="648" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">and define clear guardrails.</text>
+  <rect x="576" y="380" width="446" height="390" rx="30" fill="#FFFFFF" stroke="rgba(17,28,33,0.11)" stroke-width="1.5"/>
+  <rect x="610" y="416" width="64" height="64" rx="18" fill="#DFF3F0"/>
+  <text x="642" y="456" text-anchor="middle" fill="#0E857D" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="700">02</text>
+  <text x="610" y="538" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="-0.8">Calendar Guard</text>
+  <line x1="610" y1="566" x2="988" y2="566" stroke="rgba(17,28,33,0.09)" stroke-width="1.5"/>
+  <text x="610" y="614" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">Assign one vetted specialist</text>
+  <text x="610" y="648" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">aligned to US workday hours.</text>
+  <rect x="1056" y="380" width="446" height="390" rx="30" fill="#FFFFFF" stroke="rgba(17,28,33,0.11)" stroke-width="1.5"/>
+  <rect x="1090" y="416" width="64" height="64" rx="18" fill="#081B22"/>
+  <text x="1122" y="456" text-anchor="middle" fill="#F3D8A8" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="700">03</text>
+  <text x="1090" y="538" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="-0.8">Daily Digest</text>
+  <line x1="1090" y1="566" x2="1468" y2="566" stroke="rgba(17,28,33,0.09)" stroke-width="1.5"/>
+  <text x="1090" y="614" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">Review crisp daily wrap</text>
+  <text x="1090" y="648" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">digests—zero founder</text>
+  <text x="1090" y="682" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">babysitting.</text>
+  <text x="96" y="838" fill="#6E7E86" font-family="ui-monospace, Menlo, monospace" font-size="16" letter-spacing="1.6">AGENTIC FILIPINO • FOUNDER-LED DELEGATION FRAMEWORK</text>
 </svg>

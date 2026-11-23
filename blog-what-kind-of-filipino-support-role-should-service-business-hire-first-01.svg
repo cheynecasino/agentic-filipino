@@ -1,30 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="What Kind of Filipino Support Role Should a Service Business Hire First?">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="What kind of Filipino support role should a service business hire first?">
   <defs>
-    <linearGradient id="g113" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#07121b" />
-      <stop offset="100%" stop-color="#102031" />
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081B22"/>
+      <stop offset="100%" stop-color="#102C36"/>
     </linearGradient>
-    <radialGradient id="c113" cx="0.2" cy="0.2" r="0.8">
-      <stop offset="0%" stop-color="#57edd7" stop-opacity="0.26" />
-      <stop offset="100%" stop-color="#57edd7" stop-opacity="0" />
+    <radialGradient id="glow1" cx="0.82" cy="0.18" r="0.55">
+      <stop offset="0%" stop-color="#C2693A" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#C2693A" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="y113" cx="0.8" cy="0.15" r="0.6">
-      <stop offset="0%" stop-color="#f4cb68" stop-opacity="0.22" />
-      <stop offset="100%" stop-color="#f4cb68" stop-opacity="0" />
+    <radialGradient id="glow2" cx="0.15" cy="0.88" r="0.55">
+      <stop offset="0%" stop-color="#0E857D" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0E857D" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <rect width="1600" height="900" fill="url(#g113)" rx="40" />
-  <rect width="1600" height="900" fill="url(#c113)" rx="40" />
-  <rect width="1600" height="900" fill="url(#y113)" rx="40" />
-  <circle cx="1320" cy="170" r="120" fill="#f4cb68" opacity="0.12" />
-  <circle cx="1380" cy="220" r="52" fill="#57edd7" opacity="0.18" />
-  <rect x="110" y="120" width="280" height="40" rx="20" fill="rgba(62,232,209,0.12)" stroke="#57edd7" stroke-opacity="0.45" />
-  <text x="145" y="147" fill="#57edd7" font-family="Arial,Segoe UI,sans-serif" font-size="24" font-weight="700" letter-spacing="2">AGENTIC FILIPINO</text>
-  <path d="M1080 520 C1220 430 1360 430 1490 520" stroke="#57edd7" stroke-opacity="0.32" stroke-width="3" fill="none"/>
-  <path d="M1040 585 C1190 495 1350 500 1500 600" stroke="#f4cb68" stroke-opacity="0.26" stroke-width="3" fill="none"/>
-  <path d="M1020 655 C1170 585 1340 590 1490 700" stroke="#57edd7" stroke-opacity="0.18" stroke-width="3" fill="none"/>
-  <text x="120" y="330" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="76" font-weight="800">What Kind of Filipino</text><text x="120" y="422" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="76" font-weight="800">Support Role Should a</text><text x="120" y="514" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="76" font-weight="800">Service Business Hire</text>
-  <text x="120" y="650" fill="#98a4b8" font-family="Arial,Segoe UI,sans-serif" font-size="32">Service business team aligning support roles and workflow priorities</text>
-  <rect x="120" y="712" width="180" height="6" rx="3" fill="#57edd7" />
-  <rect x="312" y="712" width="92" height="6" rx="3" fill="#f4cb68" />
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow1)"/>
+  <rect width="1600" height="900" fill="url(#glow2)"/>
+  <line x1="96" y1="168" x2="940" y2="168" stroke="rgba(251,248,243,0.12)" stroke-width="1"/>
+  <rect x="96" y="92" width="380" height="44" rx="22" fill="rgba(194,105,58,0.18)" stroke="rgba(214,162,68,0.35)" stroke-width="1"/>
+  <circle cx="122" cy="114" r="5" fill="#D6A244"/>
+  <text x="140" y="120" fill="#F3D8A8" font-family="ui-monospace, Menlo, monospace" font-size="16" font-weight="600" letter-spacing="2.2">EXECUTIVE &amp; OPS</text>
+  <text x="96" y="290" fill="#FBF8F3" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="700" letter-spacing="-1.6">What kind of Filipino</text>
+  <text x="96" y="374" fill="#FBF8F3" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="700" letter-spacing="-1.6">support role should a</text>
+  <text x="96" y="458" fill="#FBF8F3" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="700" letter-spacing="-1.6">service business hire first?</text>
+  <text x="96" y="650" fill="#A6BDC5" font-family="system-ui, -apple-system, sans-serif" font-size="26">Founder-led vetting &amp; clear workflow ownership for US teams.</text>
+  <rect x="96" y="718" width="230" height="50" rx="25" fill="#FBF8F3"/>
+  <text x="211" y="750" text-anchor="middle" fill="#081B22" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">Agentic Filipino</text>
+  <text x="352" y="750" fill="#8BA6B0" font-family="ui-monospace, Menlo, monospace" font-size="16" letter-spacing="1.5">PLAYBOOK • US ⇄ PH</text>
+  <rect x="985" y="176" width="545" height="546" rx="34" fill="rgba(8,27,34,0.55)" stroke="rgba(251,248,243,0.12)" stroke-width="1.5"/>
+  <text x="1020" y="218" fill="#8BA6B0" font-family="ui-monospace, Menlo, monospace" font-size="14" letter-spacing="2">CORE WORKFLOW PILLARS</text>
+
+  <rect x="1015" y="240" width="485" height="114" rx="24" fill="rgba(251,248,243,0.06)" stroke="rgba(251,248,243,0.14)" stroke-width="1.5"/>
+  <rect x="1043" y="272" width="50" height="50" rx="14" fill="#C2693A" fill-opacity="0.22"/>
+  <text x="1068" y="304" text-anchor="middle" fill="#C2693A" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="700">01</text>
+  <text x="1114" y="295" fill="#FBF8F3" font-family="system-ui, -apple-system, sans-serif" font-size="23" font-weight="700">Inbox Triage</text>
+  <text x="1114" y="324" fill="#9FB6BE" font-family="system-ui, -apple-system, sans-serif" font-size="16">Structured US-overlap execution</text>
+  <rect x="1015" y="384" width="485" height="114" rx="24" fill="rgba(251,248,243,0.06)" stroke="rgba(251,248,243,0.14)" stroke-width="1.5"/>
+  <rect x="1043" y="416" width="50" height="50" rx="14" fill="#0E857D" fill-opacity="0.22"/>
+  <text x="1068" y="448" text-anchor="middle" fill="#0E857D" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="700">02</text>
+  <text x="1114" y="439" fill="#FBF8F3" font-family="system-ui, -apple-system, sans-serif" font-size="23" font-weight="700">Calendar Guard</text>
+  <text x="1114" y="468" fill="#9FB6BE" font-family="system-ui, -apple-system, sans-serif" font-size="16">Structured US-overlap execution</text>
+  <rect x="1015" y="528" width="485" height="114" rx="24" fill="rgba(251,248,243,0.06)" stroke="rgba(251,248,243,0.14)" stroke-width="1.5"/>
+  <rect x="1043" y="560" width="50" height="50" rx="14" fill="#D6A244" fill-opacity="0.22"/>
+  <text x="1068" y="592" text-anchor="middle" fill="#D6A244" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="700">03</text>
+  <text x="1114" y="583" fill="#FBF8F3" font-family="system-ui, -apple-system, sans-serif" font-size="23" font-weight="700">Daily Digest</text>
+  <text x="1114" y="612" fill="#9FB6BE" font-family="system-ui, -apple-system, sans-serif" font-size="16">Structured US-overlap execution</text>
 </svg>

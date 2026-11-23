@@ -1,1 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900"><rect width="1600" height="900" fill="#08131d"/><text x="100" y="115" fill="#3ee8d1" font-family="Arial" font-size="26" font-weight="700" letter-spacing="6">DAYS 1-5</text><text x="100" y="205" fill="#f4f7fb" font-family="Arial" font-size="64" font-weight="800">Context before speed</text><g font-family="Arial"><g transform="translate(100 315)"><rect width="310" height="360" rx="30" fill="#0d1d29" stroke="#25404e"/><circle cx="65" cy="70" r="30" fill="#3ee8d1"/><text x="65" y="80" text-anchor="middle" font-size="28" font-weight="800" fill="#071019">1</text><text x="40" y="150" fill="#fff" font-size="31" font-weight="700">Business</text><text x="40" y="190" fill="#fff" font-size="31" font-weight="700">context</text><text x="40" y="255" fill="#9fb0bf" font-size="22">How the company wins</text><text x="40" y="290" fill="#9fb0bf" font-size="22">and what customers value</text></g><g transform="translate(465 315)"><rect width="310" height="360" rx="30" fill="#0d1d29" stroke="#25404e"/><circle cx="65" cy="70" r="30" fill="#55bcd4"/><text x="65" y="80" text-anchor="middle" font-size="28" font-weight="800" fill="#071019">2</text><text x="40" y="150" fill="#fff" font-size="31" font-weight="700">Tools and</text><text x="40" y="190" fill="#fff" font-size="31" font-weight="700">access</text><text x="40" y="255" fill="#9fb0bf" font-size="22">Minimum permissions</text><text x="40" y="290" fill="#9fb0bf" font-size="22">with secure handoffs</text></g><g transform="translate(830 315)"><rect width="310" height="360" rx="30" fill="#0d1d29" stroke="#25404e"/><circle cx="65" cy="70" r="30" fill="#f2c85b"/><text x="65" y="80" text-anchor="middle" font-size="28" font-weight="800" fill="#071019">3</text><text x="40" y="150" fill="#fff" font-size="31" font-weight="700">Examples and</text><text x="40" y="190" fill="#fff" font-size="31" font-weight="700">standards</text><text x="40" y="255" fill="#9fb0bf" font-size="22">Show what good work</text><text x="40" y="290" fill="#9fb0bf" font-size="22">looks like in practice</text></g><g transform="translate(1195 315)"><rect width="310" height="360" rx="30" fill="#0d1d29" stroke="#25404e"/><circle cx="65" cy="70" r="30" fill="#ca80ff"/><text x="65" y="80" text-anchor="middle" font-size="28" font-weight="800" fill="#071019">4</text><text x="40" y="150" fill="#fff" font-size="31" font-weight="700">Supervised</text><text x="40" y="190" fill="#fff" font-size="31" font-weight="700">practice</text><text x="40" y="255" fill="#9fb0bf" font-size="22">Explain, demonstrate,</text><text x="40" y="290" fill="#9fb0bf" font-size="22">practice, then review</text></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Days 1-5: teach context before expecting speed workflow diagram">
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBF8F3"/>
+      <stop offset="100%" stop-color="#F3ECE1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sbg)"/>
+  <circle cx="1440" cy="140" r="240" fill="#C2693A" fill-opacity="0.07"/>
+  <circle cx="180" cy="820" r="220" fill="#0E857D" fill-opacity="0.06"/>
+  <rect x="96" y="88" width="360" height="40" rx="20" fill="#FFFFFF" stroke="rgba(17,28,33,0.12)" stroke-width="1"/>
+  <circle cx="120" cy="108" r="5" fill="#C2693A"/>
+  <text x="138" y="114" fill="#9C4D24" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="600" letter-spacing="2">30-DAY ONBOARDING • WORKFLOW</text>
+  <text x="96" y="218" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="-1.2">Days 1-5: teach context before expecting</text>
+  <text x="96" y="282" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="-1.2">speed</text>
+
+  <rect x="96" y="380" width="446" height="390" rx="30" fill="#FFFFFF" stroke="rgba(17,28,33,0.11)" stroke-width="1.5"/>
+  <rect x="130" y="416" width="64" height="64" rx="18" fill="#F2DFD0"/>
+  <text x="162" y="456" text-anchor="middle" fill="#9C4D24" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="700">01</text>
+  <text x="130" y="538" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="-0.8">Week 1 Scope</text>
+  <line x1="130" y1="566" x2="508" y2="566" stroke="rgba(17,28,33,0.09)" stroke-width="1.5"/>
+  <text x="130" y="614" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">Document the repeating drag</text>
+  <text x="130" y="648" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">and define clear guardrails.</text>
+  <rect x="576" y="380" width="446" height="390" rx="30" fill="#FFFFFF" stroke="rgba(17,28,33,0.11)" stroke-width="1.5"/>
+  <rect x="610" y="416" width="64" height="64" rx="18" fill="#DFF3F0"/>
+  <text x="642" y="456" text-anchor="middle" fill="#0E857D" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="700">02</text>
+  <text x="610" y="538" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="-0.8">Week 2 Rhythm</text>
+  <line x1="610" y1="566" x2="988" y2="566" stroke="rgba(17,28,33,0.09)" stroke-width="1.5"/>
+  <text x="610" y="614" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">Assign one vetted specialist</text>
+  <text x="610" y="648" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">aligned to US workday hours.</text>
+  <rect x="1056" y="380" width="446" height="390" rx="30" fill="#FFFFFF" stroke="rgba(17,28,33,0.11)" stroke-width="1.5"/>
+  <rect x="1090" y="416" width="64" height="64" rx="18" fill="#081B22"/>
+  <text x="1122" y="456" text-anchor="middle" fill="#F3D8A8" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="700">03</text>
+  <text x="1090" y="538" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="-0.8">Day 30 Ownership</text>
+  <line x1="1090" y1="566" x2="1468" y2="566" stroke="rgba(17,28,33,0.09)" stroke-width="1.5"/>
+  <text x="1090" y="614" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">Review crisp daily wrap</text>
+  <text x="1090" y="648" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">digests—zero founder</text>
+  <text x="1090" y="682" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">babysitting.</text>
+  <text x="96" y="838" fill="#6E7E86" font-family="ui-monospace, Menlo, monospace" font-size="16" letter-spacing="1.6">AGENTIC FILIPINO • FOUNDER-LED DELEGATION FRAMEWORK</text>
+</svg>

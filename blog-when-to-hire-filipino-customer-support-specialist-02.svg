@@ -1,30 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="When Should You Hire a Filipino Customer Support Specialist? Visual 2">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="The third sign is that customer communication is becoming messy workflow diagram">
   <defs>
-    <linearGradient id="g135" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0b1823" />
-      <stop offset="100%" stop-color="#102232" />
+    <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBF8F3"/>
+      <stop offset="100%" stop-color="#F3ECE1"/>
     </linearGradient>
-    <radialGradient id="c135" cx="0.2" cy="0.2" r="0.8">
-      <stop offset="0%" stop-color="#5ae9d4" stop-opacity="0.26" />
-      <stop offset="100%" stop-color="#5ae9d4" stop-opacity="0" />
-    </radialGradient>
-    <radialGradient id="y135" cx="0.8" cy="0.15" r="0.6">
-      <stop offset="0%" stop-color="#ffd277" stop-opacity="0.22" />
-      <stop offset="100%" stop-color="#ffd277" stop-opacity="0" />
-    </radialGradient>
   </defs>
-  <rect width="1600" height="900" fill="url(#g135)" rx="40" />
-  <rect width="1600" height="900" fill="url(#c135)" rx="40" />
-  <rect width="1600" height="900" fill="url(#y135)" rx="40" />
-  <circle cx="1320" cy="170" r="120" fill="#ffd277" opacity="0.12" />
-  <circle cx="1380" cy="220" r="52" fill="#5ae9d4" opacity="0.18" />
-  <rect x="110" y="120" width="280" height="40" rx="20" fill="rgba(62,232,209,0.12)" stroke="#5ae9d4" stroke-opacity="0.45" />
-  <text x="145" y="147" fill="#5ae9d4" font-family="Arial,Segoe UI,sans-serif" font-size="24" font-weight="700" letter-spacing="2">AGENTIC FILIPINO</text>
-  <path d="M1080 520 C1220 430 1360 430 1490 520" stroke="#5ae9d4" stroke-opacity="0.32" stroke-width="3" fill="none"/>
-  <path d="M1040 585 C1190 495 1350 500 1500 600" stroke="#ffd277" stroke-opacity="0.26" stroke-width="3" fill="none"/>
-  <path d="M1020 655 C1170 585 1340 590 1490 700" stroke="#5ae9d4" stroke-opacity="0.18" stroke-width="3" fill="none"/>
-  <text x="120" y="330" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="76" font-weight="800">When Should You Hire a</text><text x="120" y="422" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="76" font-weight="800">Filipino Customer</text><text x="120" y="514" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="76" font-weight="800">Support Specialist?</text>
-  <text x="120" y="650" fill="#98a4b8" font-family="Arial,Segoe UI,sans-serif" font-size="32">Customer support workflow dashboard showing response times and follow-up</text>
-  <rect x="120" y="712" width="180" height="6" rx="3" fill="#5ae9d4" />
-  <rect x="312" y="712" width="92" height="6" rx="3" fill="#ffd277" />
+  <rect width="1600" height="900" fill="url(#sbg)"/>
+  <circle cx="1440" cy="140" r="240" fill="#C2693A" fill-opacity="0.07"/>
+  <circle cx="180" cy="820" r="220" fill="#0E857D" fill-opacity="0.06"/>
+  <rect x="96" y="88" width="360" height="40" rx="20" fill="#FFFFFF" stroke="rgba(17,28,33,0.12)" stroke-width="1"/>
+  <circle cx="120" cy="108" r="5" fill="#C2693A"/>
+  <text x="138" y="114" fill="#9C4D24" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="600" letter-spacing="2">CUSTOMER SUPPORT • WORKFLOW</text>
+  <text x="96" y="218" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="-1.2">The third sign is that customer</text>
+  <text x="96" y="282" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="-1.2">communication is becoming messy</text>
+
+  <rect x="96" y="380" width="446" height="390" rx="30" fill="#FFFFFF" stroke="rgba(17,28,33,0.11)" stroke-width="1.5"/>
+  <rect x="130" y="416" width="64" height="64" rx="18" fill="#F2DFD0"/>
+  <text x="162" y="456" text-anchor="middle" fill="#9C4D24" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="700">01</text>
+  <text x="130" y="538" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="-0.8">Calm First Reply</text>
+  <line x1="130" y1="566" x2="508" y2="566" stroke="rgba(17,28,33,0.09)" stroke-width="1.5"/>
+  <text x="130" y="614" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">Document the repeating drag</text>
+  <text x="130" y="648" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">and define clear guardrails.</text>
+  <rect x="576" y="380" width="446" height="390" rx="30" fill="#FFFFFF" stroke="rgba(17,28,33,0.11)" stroke-width="1.5"/>
+  <rect x="610" y="416" width="64" height="64" rx="18" fill="#DFF3F0"/>
+  <text x="642" y="456" text-anchor="middle" fill="#0E857D" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="700">02</text>
+  <text x="610" y="538" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="-0.8">Ticket Triage</text>
+  <line x1="610" y1="566" x2="988" y2="566" stroke="rgba(17,28,33,0.09)" stroke-width="1.5"/>
+  <text x="610" y="614" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">Assign one vetted specialist</text>
+  <text x="610" y="648" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">aligned to US workday hours.</text>
+  <rect x="1056" y="380" width="446" height="390" rx="30" fill="#FFFFFF" stroke="rgba(17,28,33,0.11)" stroke-width="1.5"/>
+  <rect x="1090" y="416" width="64" height="64" rx="18" fill="#081B22"/>
+  <text x="1122" y="456" text-anchor="middle" fill="#F3D8A8" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="700">03</text>
+  <text x="1090" y="538" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="-0.8">Clean Escalation</text>
+  <line x1="1090" y1="566" x2="1468" y2="566" stroke="rgba(17,28,33,0.09)" stroke-width="1.5"/>
+  <text x="1090" y="614" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">Review crisp daily wrap</text>
+  <text x="1090" y="648" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">digests—zero founder</text>
+  <text x="1090" y="682" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">babysitting.</text>
+  <text x="96" y="838" fill="#6E7E86" font-family="ui-monospace, Menlo, monospace" font-size="16" letter-spacing="1.6">AGENTIC FILIPINO • FOUNDER-LED DELEGATION FRAMEWORK</text>
 </svg>

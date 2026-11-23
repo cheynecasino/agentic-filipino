@@ -1,1 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800"><defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#09212d"/><stop offset="1" stop-color="#071019"/></linearGradient><linearGradient id="c"><stop stop-color="#3ee8d1"/><stop offset="1" stop-color="#f2c85b"/></linearGradient></defs><rect width="1600" height="800" fill="url(#b)"/><circle cx="1330" cy="120" r="260" fill="#3ee8d1" opacity=".06"/><text x="100" y="120" fill="#3ee8d1" font-family="Arial" font-size="28" font-weight="700" letter-spacing="7">30-DAY ONBOARDING ROADMAP</text><text x="100" y="220" fill="#f4f7fb" font-family="Arial" font-size="70" font-weight="800">From new hire to</text><text x="100" y="300" fill="#f4f7fb" font-family="Arial" font-size="70" font-weight="800">dependable ownership</text><path d="M130 530H1450" stroke="#29414f" stroke-width="10"/><path d="M130 530H1010" stroke="url(#c)" stroke-width="10"/><g font-family="Arial" text-anchor="middle"><g transform="translate(180 530)"><circle r="44" fill="#0c1823" stroke="#3ee8d1" stroke-width="5"/><text y="10" fill="#fff" font-size="28" font-weight="700">01</text><text y="95" fill="#9fb0bf" font-size="25">CONTEXT</text></g><g transform="translate(575 530)"><circle r="44" fill="#0c1823" stroke="#3ee8d1" stroke-width="5"/><text y="10" fill="#fff" font-size="28" font-weight="700">10</text><text y="95" fill="#9fb0bf" font-size="25">PRACTICE</text></g><g transform="translate(970 530)"><circle r="44" fill="#0c1823" stroke="#f2c85b" stroke-width="5"/><text y="10" fill="#fff" font-size="28" font-weight="700">20</text><text y="95" fill="#9fb0bf" font-size="25">OWNERSHIP</text></g><g transform="translate(1365 530)"><circle r="44" fill="#0c1823" stroke="#f2c85b" stroke-width="5"/><text y="10" fill="#fff" font-size="28" font-weight="700">30</text><text y="95" fill="#9fb0bf" font-size="25">MOMENTUM</text></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="How to onboard a Filipino virtual assistant in the first 30 days">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081B22"/>
+      <stop offset="100%" stop-color="#102C36"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.82" cy="0.18" r="0.55">
+      <stop offset="0%" stop-color="#C2693A" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#C2693A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.15" cy="0.88" r="0.55">
+      <stop offset="0%" stop-color="#0E857D" stop-opacity="0.24"/>
+      <stop offset="100%" stop-color="#0E857D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow1)"/>
+  <rect width="1600" height="900" fill="url(#glow2)"/>
+  <line x1="96" y1="168" x2="940" y2="168" stroke="rgba(251,248,243,0.12)" stroke-width="1"/>
+  <rect x="96" y="92" width="380" height="44" rx="22" fill="rgba(194,105,58,0.18)" stroke="rgba(214,162,68,0.35)" stroke-width="1"/>
+  <circle cx="122" cy="114" r="5" fill="#D6A244"/>
+  <text x="140" y="120" fill="#F3D8A8" font-family="ui-monospace, Menlo, monospace" font-size="16" font-weight="600" letter-spacing="2.2">30-DAY ONBOARDING</text>
+  <text x="96" y="290" fill="#FBF8F3" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="700" letter-spacing="-1.6">How to onboard a Filipino</text>
+  <text x="96" y="374" fill="#FBF8F3" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="700" letter-spacing="-1.6">virtual assistant in the</text>
+  <text x="96" y="458" fill="#FBF8F3" font-family="Georgia, 'Times New Roman', serif" font-size="68" font-weight="700" letter-spacing="-1.6">first 30 days</text>
+  <text x="96" y="650" fill="#A6BDC5" font-family="system-ui, -apple-system, sans-serif" font-size="26">Founder-led vetting &amp; clear workflow ownership for US teams.</text>
+  <rect x="96" y="718" width="230" height="50" rx="25" fill="#FBF8F3"/>
+  <text x="211" y="750" text-anchor="middle" fill="#081B22" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700">Agentic Filipino</text>
+  <text x="352" y="750" fill="#8BA6B0" font-family="ui-monospace, Menlo, monospace" font-size="16" letter-spacing="1.5">PLAYBOOK • US ⇄ PH</text>
+  <rect x="985" y="176" width="545" height="546" rx="34" fill="rgba(8,27,34,0.55)" stroke="rgba(251,248,243,0.12)" stroke-width="1.5"/>
+  <text x="1020" y="218" fill="#8BA6B0" font-family="ui-monospace, Menlo, monospace" font-size="14" letter-spacing="2">CORE WORKFLOW PILLARS</text>
+
+  <rect x="1015" y="240" width="485" height="114" rx="24" fill="rgba(251,248,243,0.06)" stroke="rgba(251,248,243,0.14)" stroke-width="1.5"/>
+  <rect x="1043" y="272" width="50" height="50" rx="14" fill="#C2693A" fill-opacity="0.22"/>
+  <text x="1068" y="304" text-anchor="middle" fill="#C2693A" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="700">01</text>
+  <text x="1114" y="295" fill="#FBF8F3" font-family="system-ui, -apple-system, sans-serif" font-size="23" font-weight="700">Week 1 Scope</text>
+  <text x="1114" y="324" fill="#9FB6BE" font-family="system-ui, -apple-system, sans-serif" font-size="16">Structured US-overlap execution</text>
+  <rect x="1015" y="384" width="485" height="114" rx="24" fill="rgba(251,248,243,0.06)" stroke="rgba(251,248,243,0.14)" stroke-width="1.5"/>
+  <rect x="1043" y="416" width="50" height="50" rx="14" fill="#0E857D" fill-opacity="0.22"/>
+  <text x="1068" y="448" text-anchor="middle" fill="#0E857D" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="700">02</text>
+  <text x="1114" y="439" fill="#FBF8F3" font-family="system-ui, -apple-system, sans-serif" font-size="23" font-weight="700">Week 2 Rhythm</text>
+  <text x="1114" y="468" fill="#9FB6BE" font-family="system-ui, -apple-system, sans-serif" font-size="16">Structured US-overlap execution</text>
+  <rect x="1015" y="528" width="485" height="114" rx="24" fill="rgba(251,248,243,0.06)" stroke="rgba(251,248,243,0.14)" stroke-width="1.5"/>
+  <rect x="1043" y="560" width="50" height="50" rx="14" fill="#D6A244" fill-opacity="0.22"/>
+  <text x="1068" y="592" text-anchor="middle" fill="#D6A244" font-family="ui-monospace, Menlo, monospace" font-size="18" font-weight="700">03</text>
+  <text x="1114" y="583" fill="#FBF8F3" font-family="system-ui, -apple-system, sans-serif" font-size="23" font-weight="700">Day 30 Ownership</text>
+  <text x="1114" y="612" fill="#9FB6BE" font-family="system-ui, -apple-system, sans-serif" font-size="16">Structured US-overlap execution</text>
+</svg>
