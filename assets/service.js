@@ -105,6 +105,72 @@
     }, 8000);
   };
 
+  /* First-touch Google Ads / Referral Attribution (sessionStorage, lead forms only) */
+  const getAttribution = () => {
+    const key = 'af_attrib_v1';
+    try {
+      const existing = JSON.parse(sessionStorage.getItem(key) || 'null');
+      const params = new URLSearchParams(location.search);
+      const fresh = {
+        utm_source: params.get('utm_source') || '',
+        utm_medium: params.get('utm_medium') || '',
+        utm_campaign: params.get('utm_campaign') || '',
+        utm_content: params.get('utm_content') || '',
+        utm_term: params.get('utm_term') || '',
+        gclid: params.get('gclid') || '',
+        landing_page: location.pathname + location.search,
+        referrer: document.referrer || 'direct',
+      };
+      if (!existing) {
+        sessionStorage.setItem(key, JSON.stringify(fresh));
+        return fresh;
+      }
+      if (fresh.gclid || fresh.utm_source || fresh.utm_campaign) {
+        const merged = { ...existing, ...Object.fromEntries(Object.entries(fresh).filter(([, v]) => Boolean(v))) };
+        sessionStorage.setItem(key, JSON.stringify(merged));
+        return merged;
+      }
+      return existing;
+    } catch {
+      return { landing_page: location.pathname, referrer: document.referrer || 'direct' };
+    }
+  };
+  getAttribution();
+
+  /* Mobile Sticky Conversion Bar (auto-hides when form or footer is in view) */
+  const leadFormEl = document.querySelector('form[data-af-form="lead"]');
+  if (leadFormEl && !document.querySelector('.af-mobile-sticky')) {
+    const stickyBar = document.createElement('div');
+    stickyBar.className = 'af-mobile-sticky';
+    stickyBar.setAttribute('aria-label', 'Quick inquiry actions');
+    stickyBar.innerHTML =
+      '<a class="af-mobile-sticky__primary" href="#contact">Free role plan →</a><a class="af-mobile-sticky__secondary" href="https://calendly.com/cheynecasino/new-meeting" target="_blank" rel="noopener noreferrer">Book call</a>';
+    document.body.append(stickyBar);
+
+    let blockedByTarget = false;
+    const syncBar = () => {
+      const show = window.scrollY > 420 && !blockedByTarget;
+      stickyBar.classList.toggle('is-visible', show);
+    };
+    window.addEventListener('scroll', syncBar, { passive: true });
+    if ('IntersectionObserver' in window) {
+      const visSet = new Set();
+      const targets = [leadFormEl, document.querySelector('footer')].filter(Boolean);
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) visSet.add(e.target);
+            else visSet.delete(e.target);
+          });
+          blockedByTarget = visSet.size > 0;
+          syncBar();
+        },
+        { threshold: 0.08 }
+      );
+      targets.forEach((t) => io.observe(t));
+    }
+  }
+
   document.querySelectorAll('form[data-af-form="lead"]').forEach((form) => {
     const button = form.querySelector('button[type="submit"]');
     const feedback = form.querySelector('.af-feedback');
@@ -124,9 +190,20 @@
       const timeout = setTimeout(() => controller.abort(), 15000);
 
       try {
+        const formData = new FormData(form);
+        const attrib = getAttribution();
+        if (attrib.utm_source) formData.set('attribution_source', attrib.utm_source);
+        if (attrib.utm_medium) formData.set('attribution_medium', attrib.utm_medium);
+        if (attrib.utm_campaign) formData.set('attribution_campaign', attrib.utm_campaign);
+        if (attrib.utm_term) formData.set('attribution_term', attrib.utm_term);
+        if (attrib.gclid) formData.set('attribution_gclid', attrib.gclid);
+        if (attrib.landing_page) formData.set('first_landing_page', attrib.landing_page);
+        formData.set('submitted_page', location.pathname);
+        if (attrib.referrer) formData.set('first_referrer', attrib.referrer);
+
         const res = await fetch(form.action, {
           method: 'POST',
-          body: new FormData(form),
+          body: formData,
           headers: { Accept: 'application/json' },
           signal: controller.signal,
         });

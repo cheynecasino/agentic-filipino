@@ -1008,6 +1008,10 @@
         o.classList.toggle('is-selected', active);
         o.setAttribute('aria-checked', String(active));
       });
+      const tierSelect = document.getElementById('af-tier');
+      if (tierSelect && tiers[state.tier]) {
+        tierSelect.value = tiers[state.tier].formVal;
+      }
       renderPricing();
     });
   });
@@ -1045,7 +1049,69 @@
     setText('rcpt-tier-name', selected.name);
     setText('rcpt-tier-cost', `-${fmtUSD(tierCost)}`);
     setText('rcpt-net', `${net >= 0 ? '+' : '-'}${fmtUSD(Math.abs(net))}`);
+    updateBriefSync(selected, tierCost);
   }
+
+  function updateBriefSync(selected, tierCost) {
+    const chipText = document.getElementById('brief-sync-text');
+    const hiddenBrief = document.getElementById('af-brief-hidden');
+    if (!chipText && !hiddenBrief) return;
+    const tasks = Array.from(clearedSet).map((i) => bottlenecks[i].title);
+    const taskNote = tasks.length ? `${tasks.length} task${tasks.length > 1 ? 's' : ''} (${tasks.slice(0, 3).join(', ')}${tasks.length > 3 ? '…' : ''})` : `${state.hours} hrs/wk modeled`;
+    const summary = `${selected.name} (${fmtUSD(tierCost)}${selected.unit}, ${state.billing}) • ${taskNote} • ~${fmtUSD(state.grossMonthly)}/mo founder time modeled`;
+    if (chipText) {
+      chipText.innerHTML = `<strong>Auto-attached role brief:</strong> ${selected.name} (${state.billing}) &bull; ${taskNote}`;
+    }
+    if (hiddenBrief) {
+      hiddenBrief.value = `${summary}${tasks.length ? ` | All selected tasks: ${tasks.join('; ')}` : ''}`;
+    }
+  }
+
+  /* ------------------------------------------------------------------------
+     12a. INTERACTIVE DAY 1–30 LAUNCH PLAYBOOK TABS
+     ------------------------------------------------------------------------ */
+  const playbookData = [
+    {
+      we: 'Cheyne reviews your backlog, defines clear day-one responsibilities, sets tool access boundaries, and builds the role scorecard before we screen a single candidate.',
+      you: 'One 15-minute alignment call (or a short Loom/email) showing what keeps landing back on your plate each week.',
+      out: 'A written 1-page Role Plan & 30-day delegation sequence—confirmed before you ever pay a dollar.',
+    },
+    {
+      we: 'We run our 4-signal screen—written judgment, live US-client tone, real workflow scenario tests, and founder review—filtering 100+ applicants down to 2–3 finalists.',
+      you: 'Meet your top 2–3 pre-vetted finalists in concise 20-minute calls and choose who feels natural with your team.',
+      out: 'A clean shortlist with scored test samples and timezone overlap confirmed—zero resume floods.',
+    },
+    {
+      we: 'We kick off your partner inside your tools with least-privilege access, establish an 8:00 AM priority check-in + 5:00 PM wrap digest, and stay on standby for fast calibration.',
+      you: 'Share your top recurring tasks and give quick 2-minute async feedback on their first few drafts.',
+      out: 'Immediate inbox, CRM, or backlog relief in Week 2 plus clean living SOPs started from Day 1.',
+    },
+    {
+      we: 'We run a 30-day founder review checking response speed, error rate, and documentation depth—expanding their owned workflows cleanly as trust compounds.',
+      you: 'Reclaim 15–30+ hours every single week for sales, leadership, and unplugged evenings while operations run smoothly.',
+      out: 'An embedded long-term Filipino partner backed by our ongoing support and free replacement guarantee.',
+    },
+  ];
+
+  const pbTabs = document.querySelectorAll('[data-playbook]');
+  pbTabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const idx = Number(tab.dataset.playbook) || 0;
+      const item = playbookData[idx];
+      if (!item) return;
+      pbTabs.forEach((t) => {
+        const active = t === tab;
+        t.classList.toggle('is-active', active);
+        t.setAttribute('aria-selected', String(active));
+      });
+      const elWe = document.getElementById('pb-we');
+      const elYou = document.getElementById('pb-you');
+      const elOut = document.getElementById('pb-out');
+      if (elWe) elWe.textContent = item.we;
+      if (elYou) elYou.textContent = item.you;
+      if (elOut) elOut.textContent = item.out;
+    });
+  });
 
   // Live session timer + date on receipt
   const sessionStart = Date.now();
@@ -1097,8 +1163,71 @@
   });
 
   /* ------------------------------------------------------------------------
-     13. REAL FORMSUBMIT LEAD SUBMISSION + CONVERSION TRACKING
+     13. FIRST-TOUCH ATTRIBUTION + MOBILE STICKY CTA + FORMSUBMIT ENGINE
      ------------------------------------------------------------------------ */
+  const getAttribution = () => {
+    const key = 'af_attrib_v1';
+    try {
+      const existing = JSON.parse(sessionStorage.getItem(key) || 'null');
+      const params = new URLSearchParams(location.search);
+      const fresh = {
+        utm_source: params.get('utm_source') || '',
+        utm_medium: params.get('utm_medium') || '',
+        utm_campaign: params.get('utm_campaign') || '',
+        utm_content: params.get('utm_content') || '',
+        utm_term: params.get('utm_term') || '',
+        gclid: params.get('gclid') || '',
+        landing_page: location.pathname + location.search,
+        referrer: document.referrer || 'direct',
+      };
+      if (!existing) {
+        sessionStorage.setItem(key, JSON.stringify(fresh));
+        return fresh;
+      }
+      if (fresh.gclid || fresh.utm_source || fresh.utm_campaign) {
+        const merged = { ...existing, ...Object.fromEntries(Object.entries(fresh).filter(([, v]) => Boolean(v))) };
+        sessionStorage.setItem(key, JSON.stringify(merged));
+        return merged;
+      }
+      return existing;
+    } catch {
+      return { landing_page: location.pathname, referrer: document.referrer || 'direct' };
+    }
+  };
+  getAttribution();
+
+  /* Mobile Sticky CTA Bar (glides in after hero, hides on #contact & #footer) */
+  if (!document.querySelector('.af-mobile-sticky')) {
+    const stickyBar = document.createElement('div');
+    stickyBar.className = 'af-mobile-sticky';
+    stickyBar.setAttribute('aria-label', 'Quick hiring actions');
+    stickyBar.innerHTML =
+      '<a class="af-mobile-sticky__primary" href="#contact">Free role plan →</a><a class="af-mobile-sticky__secondary" href="https://calendly.com/cheynecasino/new-meeting" target="_blank" rel="noopener noreferrer">Book call</a>';
+    document.body.append(stickyBar);
+
+    let blocked = false;
+    const syncSticky = () => {
+      stickyBar.classList.toggle('is-visible', window.scrollY > 560 && !blocked);
+    };
+    window.addEventListener('scroll', syncSticky, { passive: true });
+    if ('IntersectionObserver' in window) {
+      const vis = new Set();
+      const targets = [document.getElementById('contact'), document.getElementById('footer')].filter(Boolean);
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) vis.add(e.target);
+            else vis.delete(e.target);
+          });
+          blocked = vis.size > 0;
+          syncSticky();
+        },
+        { threshold: 0.08 }
+      );
+      targets.forEach((t) => io.observe(t));
+    }
+  }
+
   let toastTimer;
   const showToast = (message) => {
     let toast = document.querySelector('.af-toast');
@@ -1106,7 +1235,7 @@
       toast = document.createElement('aside');
       toast.className = 'af-toast';
       toast.setAttribute('role', 'status');
-      document.body.appendChild(toast);
+      document.body.append(toast);
     }
     toast.replaceChildren();
     const close = document.createElement('button');
@@ -1144,9 +1273,20 @@
     const timeout = setTimeout(() => controller.abort(), 15000);
 
     try {
+      const formData = new FormData(leadForm);
+      const attrib = getAttribution();
+      if (attrib.utm_source) formData.set('attribution_source', attrib.utm_source);
+      if (attrib.utm_medium) formData.set('attribution_medium', attrib.utm_medium);
+      if (attrib.utm_campaign) formData.set('attribution_campaign', attrib.utm_campaign);
+      if (attrib.utm_term) formData.set('attribution_term', attrib.utm_term);
+      if (attrib.gclid) formData.set('attribution_gclid', attrib.gclid);
+      if (attrib.landing_page) formData.set('first_landing_page', attrib.landing_page);
+      formData.set('submitted_page', location.pathname);
+      if (attrib.referrer) formData.set('first_referrer', attrib.referrer);
+
       const response = await fetch(leadForm.action, {
         method: 'POST',
-        body: new FormData(leadForm),
+        body: formData,
         headers: { Accept: 'application/json' },
         signal: controller.signal,
       });
