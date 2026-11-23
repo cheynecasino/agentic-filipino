@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="How much does a Filipino virtual assistant cost in 2026?">
+  <defs><linearGradient id="cbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FBF8F3"/><stop offset="100%" stop-color="#F2E7D9"/></linearGradient></defs>
+  <rect width="1200" height="675" fill="url(#cbg)"/>
+  <circle cx="1060" cy="130" r="190" fill="#C2693A" fill-opacity="0.11"/>
+  <circle cx="990" cy="560" r="150" fill="#0E857D" fill-opacity="0.09"/>
+  <rect x="72" y="72" width="340" height="40" rx="20" fill="#FFFFFF" stroke="rgba(17,28,33,0.12)" stroke-width="1"/>
+  <circle cx="96" cy="92" r="5" fill="#C2693A"/>
+  <text x="114" y="98" fill="#9C4D24" font-family="ui-monospace, Menlo, monospace" font-size="14" font-weight="600" letter-spacing="1.8">2026 PRICING GUIDE</text>
+  <text x="72" y="235" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" letter-spacing="-1.4">How much does a Filipino</text>
+  <text x="72" y="307" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" letter-spacing="-1.4">virtual assistant cost in</text>
+  <text x="72" y="379" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" letter-spacing="-1.4">2026?</text>
+
+  <rect x="72" y="520" width="175" height="48" rx="24" fill="#081B22" stroke="rgba(17,28,33,0.14)" stroke-width="1.2"/>
+  <text x="160" y="550" text-anchor="middle" fill="#FBF8F3" font-family="system-ui, -apple-system, sans-serif" font-size="19" font-weight="600">$180 Pilot</text>
+  <rect x="261" y="520" width="175" height="48" rx="24" fill="#FFFFFF" stroke="rgba(17,28,33,0.14)" stroke-width="1.2"/>
+  <text x="348" y="550" text-anchor="middle" fill="#111C21" font-family="system-ui, -apple-system, sans-serif" font-size="19" font-weight="600">$1,200 PT</text>
+  <rect x="450" y="520" width="175" height="48" rx="24" fill="#FFFFFF" stroke="rgba(17,28,33,0.14)" stroke-width="1.2"/>
+  <text x="538" y="550" text-anchor="middle" fill="#111C21" font-family="system-ui, -apple-system, sans-serif" font-size="19" font-weight="600">$2,200 FT</text>
+  <text x="72" y="622" fill="#6E7E86" font-family="ui-monospace, Menlo, monospace" font-size="14" letter-spacing="1.8">AGENTIC FILIPINO • 2026 BUYER GUIDE</text>
+</svg>
