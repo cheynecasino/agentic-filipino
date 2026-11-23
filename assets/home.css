@@ -536,17 +536,24 @@ button {
   background: var(--bg-stone);
   z-index: 12;
 }
+html.af-skip-loader .loader {
+  display: none !important;
+}
+.sheet--faq {
+  background: var(--bg-porcelain);
+  z-index: 13;
+}
 .sheet--sunlit {
   background: radial-gradient(circle at 75% 40%, rgba(194, 105, 58, 0.14), transparent 56%),
     repeating-conic-gradient(from 0deg at 72% 45%, rgba(255, 255, 255, 0.24) 0deg 8deg, transparent 8deg 16deg),
     var(--bg-sunlit);
-  z-index: 13;
+  z-index: 14;
 }
 .sheet--footer {
   background: var(--deep-slate);
   color: var(--ink-on-dark);
   padding: clamp(64px, 6.5vw, 92px) 0 clamp(28px, 3.5vw, 44px);
-  z-index: 14;
+  z-index: 15;
   overflow: hidden;
 }
 
@@ -3567,6 +3574,197 @@ button {
 }
 
 /* ==========================================================================
+   12b. FOUNDER'S NOTE + INTERACTIVE FAQ ACCORDION (#faq)
+   ========================================================================== */
+.faq-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  gap: clamp(28px, 5vw, 64px);
+  align-items: start;
+}
+
+.founder-note {
+  position: sticky;
+  top: 100px;
+  padding: clamp(26px, 3vw, 38px);
+  border-radius: 30px;
+  background: linear-gradient(155deg, var(--bg-alabaster) 0%, #f5ece0 100%);
+  border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow-sm);
+}
+
+.founder-note__quote {
+  margin: 0 0 18px;
+  font-family: var(--font-serif);
+  font-size: clamp(24px, 2.3vw, 31px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+  color: var(--ink);
+}
+
+.founder-note__quote em {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--copper);
+}
+
+.founder-note p {
+  margin: 0 0 14px;
+  font-size: 15px;
+  line-height: 1.68;
+  color: var(--ink-soft);
+}
+
+.founder-note__sig {
+  margin: 20px 0 22px;
+  padding-top: 18px;
+  border-top: 1px dashed var(--line-strong);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.founder-note__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.founder-note__monogram {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: var(--deep-slate);
+  color: var(--gold);
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.founder-note__name {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.founder-note__role {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-top: 2px;
+}
+
+.founder-guarantees {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.founder-guarantee {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.founder-guarantee span {
+  color: var(--teal-deep);
+  font-weight: 800;
+}
+
+.faq-head {
+  margin-bottom: 24px;
+}
+
+.faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-item {
+  border-radius: 22px;
+  background: var(--bg-alabaster);
+  border: 1px solid var(--line);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.faq-item[open] {
+  background: var(--bg-porcelain);
+  border-color: rgba(194, 105, 58, 0.35);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  font-family: var(--font-serif);
+  font-size: clamp(17.5px, 1.5vw, 20px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--ink);
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item__icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--line-strong);
+  background: var(--bg-porcelain);
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 16px;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  transition: transform 0.28s var(--ease-out), background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.faq-item[open] .faq-item__icon {
+  transform: rotate(45deg);
+  background: var(--deep-slate);
+  border-color: var(--deep-slate);
+  color: var(--ink-on-dark);
+}
+
+.faq-item__body {
+  padding: 0 24px 22px;
+  font-size: 15px;
+  line-height: 1.68;
+  color: var(--ink-soft);
+}
+
+.faq-item__body p {
+  margin: 0;
+}
+
+/* ==========================================================================
    13. FINAL CTA + REAL LEAD INQUIRY FORM (#contact)
    ========================================================================== */
 .contact-grid {
@@ -3923,12 +4121,17 @@ button {
   .vault-grid,
   .pricing-grid,
   .pricing-head,
+  .faq-grid,
   .contact-grid,
   .grave-top,
   .flow-stage,
   .flow-summary,
   .footer-top {
     grid-template-columns: 1fr;
+  }
+
+  .founder-note {
+    position: static;
   }
 
   .section-lead {

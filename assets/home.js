@@ -22,7 +22,7 @@
     }).format(Math.round(n));
 
   /* ------------------------------------------------------------------------
-     00. PRELOADER CURTAIN
+     00. PRELOADER CURTAIN (runs once per session, skips on hash/repeat visits)
      ------------------------------------------------------------------------ */
   const loader = document.getElementById('loader');
   const loaderPct = document.getElementById('loader-pct');
@@ -30,13 +30,21 @@
   const loaderCircle = document.getElementById('loader-circle');
 
   if (loader) {
-    if (prefersReduced) {
+    let seenIntro = false;
+    try {
+      seenIntro = sessionStorage.getItem('af_seen_intro') === '1';
+    } catch (_) {}
+
+    if (prefersReduced || seenIntro || Boolean(location.hash)) {
       loader.classList.add('is-done');
     } else {
+      try {
+        sessionStorage.setItem('af_seen_intro', '1');
+      } catch (_) {}
       const stages = ['MAPPING WORKFLOWS', 'CHECKING FOUR SIGNALS', 'SHORTLIST READY'];
       let pct = 0;
       const start = performance.now();
-      const duration = 760;
+      const duration = 520;
 
       const tickLoader = (now) => {
         const t = Math.min(1, (now - start) / duration);
@@ -50,7 +58,7 @@
         if (t < 1) {
           requestAnimationFrame(tickLoader);
         } else {
-          setTimeout(() => loader.classList.add('is-done'), 140);
+          setTimeout(() => loader.classList.add('is-done'), 100);
         }
       };
       requestAnimationFrame(tickLoader);
