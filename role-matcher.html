@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>2-Minute Role Matcher &amp; Delegation Blueprint | Agentic Filipino</title>
+  <meta name="description" content="Answer 4 quick questions to get a custom Filipino support role recommendation, realistic pricing tier, and Day 1–14 delegation checklist tailored to your exact tools." />
+  <meta name="theme-color" content="#FBF8F3" />
+  <link rel="canonical" href="https://www.agenticfilipino.com/role-matcher" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Find Your Highest-Leverage First Hire in 2 Minutes | Agentic Filipino" />
+  <meta property="og:description" content="Answer 4 quick founder questions and receive an instant custom role plan, tier recommendation, and first-two-weeks delegation checklist." />
+  <meta property="og:url" content="https://www.agenticfilipino.com/role-matcher" />
+  <meta property="og:image" content="https://www.agenticfilipino.com/assets/media/og-home.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" href="/agentic-filipino-logo-512.png" type="image/png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,600..900;1,9..144,500..700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18276066095"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18276066095');
+  </script>
+
+  <link rel="stylesheet" href="/assets/service.css?v=20261123e" />
+  <script defer src="/assets/service.js?v=20261123e"></script>
+  <style>
+    .quiz-shell {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .quiz-head {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .quiz-head p.svc-intro {
+      margin: 0 auto;
+    }
+    .quiz-card {
+      border-radius: 32px;
+      padding: clamp(24px, 3.8vw, 44px);
+      background: var(--bg-porcelain);
+      border: 1px solid var(--line-strong);
+      box-shadow: var(--shadow-lg);
+    }
+    .quiz-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 14px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+    }
+    .quiz-track {
+      height: 6px;
+      border-radius: 999px;
+      background: var(--bg-sand);
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .quiz-fill {
+      display: block;
+      height: 100%;
+      width: 25%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--copper), var(--teal));
+      transition: width 0.32s var(--ease-out);
+    }
+    .quiz-step[hidden] {
+      display: none;
+    }
+    .quiz-q {
+      margin: 0 0 8px;
+      font-family: var(--font-serif);
+      font-size: clamp(24px, 3vw, 34px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+    .quiz-sub {
+      margin: 0 0 24px;
+      font-size: 15.5px;
+      color: var(--ink-soft);
+    }
+    .quiz-options {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .quiz-opt {
+      appearance: none;
+      text-align: left;
+      padding: 18px 20px;
+      border-radius: 20px;
+      background: var(--bg-alabaster);
+      border: 1.5px solid var(--line);
+      cursor: pointer;
+      transition: border-color 0.2s ease, background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .quiz-opt:hover {
+      border-color: var(--copper);
+      background: var(--bg-porcelain);
+      transform: translateY(-2px);
+    }
+    .quiz-opt.is-selected {
+      background: var(--deep-slate);
+      border-color: var(--deep-slate);
+      color: var(--ink-on-dark);
+      box-shadow: var(--shadow-md);
+    }
+    .quiz-opt strong {
+      display: block;
+      font-family: var(--font-serif);
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .quiz-opt span {
+      display: block;
+      font-size: 13.5px;
+      line-height: 1.48;
+      color: var(--ink-soft);
+    }
+    .quiz-opt.is-selected span {
+      color: var(--ink-on-dark-muted);
+    }
+    .quiz-tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .tool-pill {
+      appearance: none;
+      padding: 11px 16px;
+      border-radius: 999px;
+      background: var(--bg-alabaster);
+      border: 1.5px solid var(--line-strong);
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .tool-pill:hover {
+      border-color: var(--copper);
+    }
+    .tool-pill.is-selected {
+      background: var(--deep-slate);
+      border-color: var(--deep-slate);
+      color: var(--ink-on-dark);
+    }
+    .quiz-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 28px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+    }
+    .quiz-nav[hidden] {
+      display: none;
+    }
+    /* Result Blueprint */
+    .result-banner {
+      padding: 26px 28px;
+      border-radius: 24px;
+      background: var(--deep-slate);
+      color: var(--ink-on-dark);
+      margin-bottom: 24px;
+    }
+    .result-banner .eyebrow {
+      color: var(--teal-light);
+      margin-bottom: 10px;
+    }
+    .result-banner h2 {
+      margin: 0 0 8px;
+      font-family: var(--font-serif);
+      font-size: clamp(26px, 3.2vw, 38px);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.08;
+      color: var(--ink-on-dark);
+    }
+    .result-banner h2 em {
+      font-style: italic;
+      font-weight: 600;
+      color: var(--gold);
+    }
+    .result-banner p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--ink-on-dark-muted);
+    }
+    .result-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .result-stat {
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .result-stat small {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal-light);
+      margin-bottom: 4px;
+    }
+    .result-stat strong {
+      font-family: var(--font-serif);
+      font-size: 20px;
+      color: var(--ink-on-dark);
+    }
+    .result-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 22px;
+      align-items: start;
+    }
+    .checklist-card {
+      padding: 24px;
+      border-radius: 24px;
+      background: var(--bg-alabaster);
+      border: 1px solid var(--line);
+    }
+    .checklist-card h3 {
+      margin: 0 0 14px;
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 800;
+    }
+    .checklist-card ul {
+      list-style: none;
+      margin: 0 0 20px;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+    }
+    .checklist-card li {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 10px;
+      font-size: 14.5px;
+      line-height: 1.5;
+      color: var(--ink-soft);
+    }
+    .checklist-card li::before {
+      content: "✓";
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--teal-soft);
+      color: var(--teal-deep);
+      font-weight: 800;
+      font-size: 12px;
+      display: grid;
+      place-items: center;
+      margin-top: 2px;
+    }
+    .result-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .result-form {
+      padding: 24px;
+      border-radius: 24px;
+      background: var(--bg-porcelain);
+      border: 1px solid var(--line-strong);
+      box-shadow: var(--shadow-sm);
+    }
+    .result-form h3 {
+      margin: 0 0 6px;
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 800;
+    }
+    .result-form > p {
+      margin: 0 0 16px;
+      font-size: 14px;
+      color: var(--ink-soft);
+    }
+    @media (max-width: 780px) {
+      .quiz-options,
+      .result-stats,
+      .result-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="/" aria-label="Agentic Filipino home">
+      <svg viewBox="0 0 100 100" fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="svc-g" x1="15" y1="12" x2="86" y2="90" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#D6A244" /><stop offset="52%" stop-color="#C2693A" /><stop offset="100%" stop-color="#0E857D" />
+          </linearGradient>
+        </defs>
+        <path d="M50 6 88 28v44L50 94 12 72V28L50 6Z" fill="#081B22" stroke="url(#svc-g)" stroke-width="3.5" />
+        <path d="M27 70 50 24l23 46H60.5L50 47.5 39.5 70H27Z" fill="url(#svc-g)" />
+      </svg>
+      <span class="nav__wordmark">agentic <em>filipino</em></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary navigation">
+      <a href="/">Home</a>
+      <a href="/role-matcher" aria-current="page">Role Matcher</a>
+      <a href="/#pricing">Tiers</a>
+      <a href="/blog">Insights</a>
+      <a href="/book">Book Call</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="nav__cta" href="/book">Book 15-min call</a>
+      <button class="nav__menu" id="nav-menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navsheet"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="navsheet" id="navsheet" aria-hidden="true">
+    <nav class="navsheet__links" aria-label="Mobile navigation">
+      <a href="/"><span>01</span>Home</a>
+      <a href="/role-matcher"><span>02</span>2-Min Role Matcher</a>
+      <a href="/book"><span>03</span>Book 15-Min Call</a>
+      <a href="/executive-assistant-support"><span>04</span>Executive Assistant</a>
+      <a href="/lead-generation-appointment-setter"><span>05</span>Lead Gen &amp; Setters</a>
+      <a href="/construction-admin-support/"><span>06</span>Construction Pilot</a>
+      <a href="/blog"><span>07</span>Hiring Insights</a>
+    </nav>
+    <a class="btn btn--primary" href="/book" style="width:100%">Book 15 min with Cheyne →</a>
+  </div>
+
+  <main id="main-content">
+    <section class="sheet sheet--hero">
+      <div class="container quiz-shell">
+        <div class="quiz-head">
+          <p class="eyebrow"><span class="eyebrow__dot"></span>Interactive founder tool</p>
+          <h1 class="display-xl">Find your highest-leverage <em>first hire.</em></h1>
+          <p class="svc-intro">Answer 4 quick questions to get an instant role recommendation, realistic pricing tier, and Day 1–14 delegation blueprint—no email required to see your plan.</p>
+        </div>
+
+        <div class="quiz-card" id="quiz-card">
+          <div class="quiz-bar">
+            <span id="quiz-step-label">Step 1 of 4 &bull; Biggest bottleneck</span>
+            <span id="quiz-pct">25%</span>
+          </div>
+          <div class="quiz-track"><span class="quiz-fill" id="quiz-fill"></span></div>
+
+          <!-- Step 1 -->
+          <div class="quiz-step" data-step="0">
+            <h2 class="quiz-q">Where is work piling up on your plate right now?</h2>
+            <p class="quiz-sub">Choose the single lane that would give you the biggest sigh of relief next week.</p>
+            <div class="quiz-options">
+              <button class="quiz-opt is-selected" type="button" data-lane="executive">
+                <strong>Inbox, Calendar &amp; Founder Admin</strong>
+                <span>Email triage, scheduling, vendor coordination, meeting notes, and daily ops.</span>
+              </button>
+              <button class="quiz-opt" type="button" data-lane="leads">
+                <strong>Slow Lead Follow-Up &amp; Open Quotes</strong>
+                <span>Speed-to-lead replies, chasing unbooked estimates, CRM hygiene, and booking calls.</span>
+              </button>
+              <button class="quiz-opt" type="button" data-lane="support">
+                <strong>Customer Support Queue &amp; Chat</strong>
+                <span>Weekday email/chat replies, ticket triage, and structured escalations.</span>
+              </button>
+              <button class="quiz-opt" type="button" data-lane="construction">
+                <strong>Construction Back Office &amp; Schedules</strong>
+                <span>Estimate follow-ups, job schedule updates, customer check-ins, and job files.</span>
+              </button>
+              <button class="quiz-opt" type="button" data-lane="real-estate">
+                <strong>Real Estate CRM &amp; Listing Admin</strong>
+                <span>Lead follow-up, listing checklists, database cleanup, and transaction folders.</span>
+              </button>
+              <button class="quiz-opt" type="button" data-lane="ecommerce">
+                <strong>Ecommerce Orders, Returns &amp; Store Ops</strong>
+                <span>Order-status tickets, returns policy admin, Shopify/Gorgias queues, and catalog updates.</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="quiz-step" data-step="1" hidden>
+            <h2 class="quiz-q">Roughly how many hours per week are stuck here?</h2>
+            <p class="quiz-sub">Count both your time and your core team&rsquo;s interrupted afternoons.</p>
+            <div class="quiz-options">
+              <button class="quiz-opt" type="button" data-hours="8">
+                <strong>5–10 hours / week</strong>
+                <span>Nagging recurring drag—perfect for testing one workflow first.</span>
+              </button>
+              <button class="quiz-opt is-selected" type="button" data-hours="16">
+                <strong>10–20 hours / week</strong>
+                <span>Stealing 2–3 full days of executive or sales focus every week.</span>
+              </button>
+              <button class="quiz-opt" type="button" data-hours="28">
+                <strong>20–35 hours / week</strong>
+                <span>Needs dedicated daily US-workday ownership without gaps.</span>
+              </button>
+              <button class="quiz-opt" type="button" data-hours="42">
+                <strong>35+ hours / multi-lane backlog</strong>
+                <span>Ready for a full-time embedded partner or two-person pod.</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="quiz-step" data-step="2" hidden>
+            <h2 class="quiz-q">Which tools does your team already live in?</h2>
+            <p class="quiz-sub">Select all that apply—we screen candidates on your actual stack.</p>
+            <div class="quiz-tools" id="quiz-tools">
+              <button class="tool-pill is-selected" type="button" data-tool="Gmail / Google Workspace">Gmail / Google Workspace</button>
+              <button class="tool-pill" type="button" data-tool="Outlook / Microsoft 365">Outlook / Microsoft 365</button>
+              <button class="tool-pill is-selected" type="button" data-tool="Slack / Teams">Slack / Teams</button>
+              <button class="tool-pill" type="button" data-tool="HubSpot / GoHighLevel">HubSpot / GoHighLevel</button>
+              <button class="tool-pill" type="button" data-tool="Jobber / Buildertrend / ServiceTitan">Jobber / Buildertrend</button>
+              <button class="tool-pill" type="button" data-tool="Zendesk / Intercom / Gorgias">Zendesk / Gorgias</button>
+              <button class="tool-pill" type="button" data-tool="Shopify">Shopify</button>
+              <button class="tool-pill" type="button" data-tool="Follow Up Boss / Real Estate CRM">Follow Up Boss</button>
+              <button class="tool-pill" type="button" data-tool="Notion / Asana / ClickUp">Notion / Asana / ClickUp</button>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="quiz-step" data-step="3" hidden>
+            <h2 class="quiz-q">How do you prefer to start?</h2>
+            <p class="quiz-sub">Every option includes founder review before any payment is ever collected.</p>
+            <div class="quiz-options">
+              <button class="quiz-opt" type="button" data-pref="pilot">
+                <strong>Test 1 workflow first ($180 / 20 hrs)</strong>
+                <span>Zero long-term commitment—validate quality on one repeatable workflow.</span>
+              </button>
+              <button class="quiz-opt" type="button" data-pref="parttime">
+                <strong>Part-Time Partner ($1,200 / mo)</strong>
+                <span>20 hrs/wk dedicated weekday coverage aligned with your US hours.</span>
+              </button>
+              <button class="quiz-opt" type="button" data-pref="fulltime">
+                <strong>Full-Time Embedded ($2,200 / mo)</strong>
+                <span>40 hrs/wk dedicated specialist fully embedded inside your daily stack.</span>
+              </button>
+              <button class="quiz-opt is-selected" type="button" data-pref="recommend">
+                <strong>Recommend the smartest fit for me</strong>
+                <span>Match the right tier automatically based on my hours and workflow.</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Result Step -->
+          <div class="quiz-step" data-step="4" hidden>
+            <div class="result-banner">
+              <p class="eyebrow"><span class="eyebrow__dot"></span>Your custom role blueprint</p>
+              <h2 id="res-title">Dedicated <em>Executive Assistant</em></h2>
+              <p id="res-desc"></p>
+              <div class="result-stats">
+                <div class="result-stat"><small>Recommended Tier</small><strong id="res-tier">Part-Time ($1,200/mo)</strong></div>
+                <div class="result-stat"><small>Reclaimed Time / Mo</small><strong id="res-hrs">~69 hrs/mo</strong></div>
+                <div class="result-stat"><small>Est. Founder Value</small><strong id="res-val">$8,600/mo</strong></div>
+              </div>
+            </div>
+
+            <div class="result-grid">
+              <div class="checklist-card">
+                <h3>Your Day 1–14 Delegation Checklist</h3>
+                <ul id="res-checklist"></ul>
+                <div class="result-links">
+                  <a class="btn btn--secondary" id="res-lane-link" href="/executive-assistant-support">Explore lane details →</a>
+                  <button class="btn btn--secondary" type="button" id="res-download">Download .txt brief</button>
+                  <button class="btn btn--secondary" type="button" id="res-retake">Retake quiz</button>
+                </div>
+              </div>
+
+              <form class="result-form" id="role-matcher-form" data-af-form="lead" action="https://formsubmit.co/ajax/bf293ae6852d63362544d7f957b96e47" method="POST">
+                <h3>Send this blueprint to Cheyne</h3>
+                <p>Get a curated shortlist timeline &amp; exact workflow scope by email within 24–48 hours.</p>
+                <input type="hidden" name="_subject" value="New 2-Minute Role Matcher Blueprint lead" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="recommended_lane" id="rm-lane-input" value="" />
+                <input type="hidden" name="tier" id="rm-tier-input" value="" />
+                <input type="hidden" name="role_matcher_blueprint" id="rm-blueprint-input" value="" />
+
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="rm-name">Your name</label>
+                    <input id="rm-name" name="name" autocomplete="name" placeholder="Jordan Taylor" required maxlength="120" />
+                  </div>
+                  <div class="field">
+                    <label for="rm-email">Work email</label>
+                    <input id="rm-email" name="email" type="email" autocomplete="email" placeholder="jordan@company.com" required maxlength="254" />
+                  </div>
+                  <div class="field">
+                    <label for="rm-notes">Anything else we should know? (optional)</label>
+                    <textarea id="rm-notes" name="message" placeholder="Target start date, US timezone, or specific bottleneck notes…" style="min-height:82px" maxlength="2000"></textarea>
+                  </div>
+                  <button class="btn btn--primary form-submit" type="submit">Email my custom role plan →</button>
+                  <a class="btn btn--secondary" href="/book" style="width:100%">Or book 15 min with Cheyne →</a>
+                  <div class="af-feedback" hidden role="status"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="quiz-nav" id="quiz-nav">
+            <button class="btn btn--secondary" type="button" id="quiz-prev" disabled style="opacity:0.45">← Back</button>
+            <button class="btn btn--primary" type="button" id="quiz-next">Continue →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sheet sheet--footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <p class="footer-tagline">Build the team<br /><em>behind your</em> momentum.</p>
+          <p style="margin:0;color:var(--ink-on-dark-muted);font-size:14.5px;max-width:380px">
+            Founder-led Filipino talent matching for US businesses that value judgment, clear communication, and ownership.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Service Lanes</h4>
+          <ul>
+            <li><a href="/executive-assistant-support">Executive assistant</a></li>
+            <li><a href="/lead-generation-appointment-setter">Lead gen &amp; setters</a></li>
+            <li><a href="/construction-admin-support/">Construction pilot</a></li>
+            <li><a href="/customer-support-outsourcing">Customer support</a></li>
+            <li><a href="/real-estate-virtual-assistant">Real estate admin</a></li>
+            <li><a href="/ecommerce-support">Ecommerce support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/role-matcher">2-Min Role Matcher</a></li>
+            <li><a href="/#pricing">All tiers</a></li>
+            <li><a href="/blog">Hiring insights</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:sales@agenticfilipino.com">sales@agenticfilipino.com</a></li>
+            <li><a href="/book">Book a hiring call</a></li>
+            <li><a href="/apply">Apply for work</a></li>
+            <li><a href="/privacy">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <span>&copy; 2026 Agentic Filipino. Founder-led talent matching.</span>
+        <span>United States &harr; Philippines</span>
+      </div>
+      <div class="footer-giant" aria-hidden="true">agentic <em>filipino</em></div>
+    </div>
+  </footer>
+
+  <script>
+    (() => {
+      'use strict';
+      const state = {
+        step: 0,
+        lane: 'executive',
+        hours: 16,
+        tools: new Set(['Gmail / Google Workspace', 'Slack / Teams']),
+        pref: 'recommend',
+      };
+
+      const lanes = {
+        executive: {
+          name: 'Executive Assistant & Ops Partner',
+          emph: 'Executive Assistant',
+          href: '/executive-assistant-support',
+          desc: 'A founder-vetted Filipino EA who clears your inbox, guards your calendar blocks, drafts replies in your voice, and tracks recurring ops follow-through.',
+          tasks: [
+            'Day 1–3: Inbox zero audit, VIP priority rules, and drafted-reply approval folder',
+            'Day 4–6: Calendar protection blocks, rescheduling ownership, and daily 8 AM briefing',
+            'Week 2: Meeting recap action items, vendor follow-ups, and living Notion/Doc SOPs',
+          ],
+        },
+        leads: {
+          name: 'Lead Follow-Up & Appointment Setter',
+          emph: 'Appointment Setter',
+          href: '/lead-generation-appointment-setter',
+          desc: 'An articulate US-hours setter inside your CRM who replies to fresh inquiries within minutes, revives open quotes, and books qualified calls directly onto your calendar.',
+          tasks: [
+            'Day 1–3: Speed-to-lead SLA templates, CRM stage audit, and qualification script setup',
+            'Day 4–6: Live inbound lead response + systematic chase on 30-day unbooked quotes',
+            'Week 2: Daily booked-call wrap digest and clean next-touch CRM discipline',
+          ],
+        },
+        support: {
+          name: 'Customer Support Specialist',
+          emph: 'Customer Support',
+          href: '/customer-support-outsourcing',
+          desc: 'Calm, articulate weekday email and live chat coverage built around your brand voice, crisp ticket triage, and clear escalation guardrails.',
+          tasks: [
+            'Day 1–3: Help desk tagging cleanup, top-20 recurring macro refinements, escalation rules',
+            'Day 4–6: Weekday tier-1 email & chat response coverage with founder spot-checks',
+            'Week 2: Living knowledge base updates and daily ticket-resolution summary',
+          ],
+        },
+        construction: {
+          name: 'Construction Back-Office Coordinator',
+          emph: 'Construction Admin',
+          href: '/construction-admin-support/',
+          desc: 'Clean administrative support focused on estimate follow-ups, job schedule updates, customer check-ins, and organized job folders—while estimating stays with your team.',
+          tasks: [
+            'Day 1–3: Open-estimate backlog tracker and polite customer check-in cadence',
+            'Day 4–6: Daily job schedule coordination notes and homeowner update messages',
+            'Week 2: Organized job records, permit/document reminders, and end-of-day PM wrap',
+          ],
+        },
+        'real-estate': {
+          name: 'Real Estate Admin & Follow-Up VA',
+          emph: 'Real Estate Partner',
+          href: '/real-estate-virtual-assistant',
+          desc: 'Dedicated real estate CRM hygiene, approved-script lead follow-up, listing checklists, and clean transaction folder management so agents stay focused on closings.',
+          tasks: [
+            'Day 1–3: CRM contact cleanup, lead tagging, and stale-inquiry reactivation cadence',
+            'Day 4–6: Listing prep checklists, showing coordination, and vendor follow-ups',
+            'Week 2: Organized transaction timelines and daily agent priority brief',
+          ],
+        },
+        ecommerce: {
+          name: 'Ecommerce Operations & Support Partner',
+          emph: 'Ecommerce Ops',
+          href: '/ecommerce-support',
+          desc: 'Post-checkout WISMO resolution, returns & exchange admin under your policy, and routine catalog/storefront maintenance.',
+          tasks: [
+            'Day 1–3: Order-status & tracking reply templates + refund/exchange policy guardrails',
+            'Day 4–6: Daily support inbox coverage across email, chat, and order escalations',
+            'Week 2: Product listing updates, carrier claim follow-ups, and weekly issue trend report',
+          ],
+        },
+      };
+
+      const stepLabels = [
+        'Step 1 of 4 • Biggest bottleneck',
+        'Step 2 of 4 • Weekly hours stuck',
+        'Step 3 of 4 • Your core stack',
+        'Step 4 of 4 • Starting rhythm',
+        'Complete • Your custom role blueprint',
+      ];
+
+      const steps = document.querySelectorAll('.quiz-step');
+      const prevBtn = document.getElementById('quiz-prev');
+      const nextBtn = document.getElementById('quiz-next');
+      const navEl = document.getElementById('quiz-nav');
+      const fillEl = document.getElementById('quiz-fill');
+      const labelEl = document.getElementById('quiz-step-label');
+      const pctEl = document.getElementById('quiz-pct');
+
+      const getTier = () => {
+        if (state.pref === 'pilot') return { label: 'Workflow Pilot ($180 / 20 hrs)', short: '$180 Pilot' };
+        if (state.pref === 'parttime') return { label: 'Part-Time Partner ($1,200/mo)', short: '$1,200 / mo' };
+        if (state.pref === 'fulltime') return { label: 'Full-Time Embedded ($2,200/mo)', short: '$2,200 / mo' };
+        if (state.hours <= 10) return { label: 'Workflow Pilot ($180 / 20 hrs)', short: '$180 Pilot' };
+        if (state.hours <= 20) return { label: 'Part-Time Partner ($1,200/mo)', short: '$1,200 / mo' };
+        if (state.hours <= 35) return { label: 'Full-Time Embedded ($2,200/mo)', short: '$2,200 / mo' };
+        return { label: 'Team Pod ($3,900/mo)', short: '$3,900 / mo' };
+      };
+
+      let lastBlueprintTxt = '';
+
+      const renderResult = () => {
+        const lane = lanes[state.lane] || lanes.executive;
+        const tier = getTier();
+        const monthlyHrs = Math.round(state.hours * 4.33);
+        const monthlyVal = monthlyHrs * 125;
+        const toolsArr = Array.from(state.tools);
+        const toolsLine = toolsArr.length ? toolsArr.join(', ') : 'Your existing business stack';
+
+        document.getElementById('res-title').innerHTML = `Recommended: <em>${lane.emph}</em>`;
+        document.getElementById('res-desc').textContent = lane.desc;
+        document.getElementById('res-tier').textContent = tier.short;
+        document.getElementById('res-hrs').textContent = `~${monthlyHrs} hrs/mo`;
+        document.getElementById('res-val').textContent = `$${monthlyVal.toLocaleString('en-US')}/mo`;
+
+        const ul = document.getElementById('res-checklist');
+        ul.innerHTML = '';
+        const checklist = [
+          ...lane.tasks,
+          `Stack setup: Least-privilege onboarding inside ${toolsLine}`,
+        ];
+        checklist.forEach((t) => {
+          const li = document.createElement('li');
+          li.textContent = t;
+          ul.appendChild(li);
+        });
+
+        const laneLink = document.getElementById('res-lane-link');
+        laneLink.href = lane.href;
+        laneLink.textContent = `Explore ${lane.emph} →`;
+
+        lastBlueprintTxt = [
+          'AGENTIC FILIPINO — 2-MINUTE ROLE MATCHER BLUEPRINT',
+          '==================================================',
+          `Recommended Lane: ${lane.name}`,
+          `Recommended Tier: ${tier.label}`,
+          `Modeled Reclaimed Time: ~${monthlyHrs} hrs/mo (~$${monthlyVal.toLocaleString('en-US')}/mo founder value @ $125/hr)`,
+          `Selected Tools: ${toolsLine}`,
+          '',
+          'Day 1–14 Delegation Checklist:',
+          ...checklist.map((c) => `- ${c}`),
+          '',
+          'Next Step: Book 15 min at https://www.agenticfilipino.com/book or email sales@agenticfilipino.com',
+        ].join('\n');
+
+        document.getElementById('rm-lane-input').value = lane.name;
+        document.getElementById('rm-tier-input').value = tier.label;
+        document.getElementById('rm-blueprint-input').value = `${lane.name} | ${tier.label} | ${state.hours} hrs/wk | Tools: ${toolsLine}`;
+      };
+
+      const renderStep = () => {
+        steps.forEach((s) => {
+          s.hidden = Number(s.dataset.step) !== state.step;
+        });
+        const pct = Math.min(100, (state.step + 1) * 25);
+        fillEl.style.width = `${state.step === 4 ? 100 : pct}%`;
+        pctEl.textContent = `${state.step === 4 ? 100 : pct}%`;
+        labelEl.textContent = stepLabels[state.step];
+        navEl.hidden = state.step === 4;
+        prevBtn.disabled = state.step === 0;
+        prevBtn.style.opacity = state.step === 0 ? '0.45' : '1';
+        nextBtn.textContent = state.step === 3 ? 'Generate my blueprint →' : 'Continue →';
+        if (state.step === 4) renderResult();
+      };
+
+      document.querySelectorAll('[data-lane]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          state.lane = btn.dataset.lane;
+          document.querySelectorAll('[data-lane]').forEach((b) => b.classList.toggle('is-selected', b === btn));
+        });
+      });
+
+      document.querySelectorAll('[data-hours]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          state.hours = Number(btn.dataset.hours) || 16;
+          document.querySelectorAll('[data-hours]').forEach((b) => b.classList.toggle('is-selected', b === btn));
+        });
+      });
+
+      document.querySelectorAll('[data-tool]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const t = btn.dataset.tool;
+          if (state.tools.has(t)) state.tools.delete(t);
+          else state.tools.add(t);
+          btn.classList.toggle('is-selected', state.tools.has(t));
+        });
+      });
+
+      document.querySelectorAll('[data-pref]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          state.pref = btn.dataset.pref;
+          document.querySelectorAll('[data-pref]').forEach((b) => b.classList.toggle('is-selected', b === btn));
+        });
+      });
+
+      prevBtn.addEventListener('click', () => {
+        if (state.step > 0) {
+          state.step -= 1;
+          renderStep();
+        }
+      });
+
+      nextBtn.addEventListener('click', () => {
+        if (state.step < 4) {
+          state.step += 1;
+          renderStep();
+        }
+      });
+
+      document.getElementById('res-retake')?.addEventListener('click', () => {
+        state.step = 0;
+        renderStep();
+      });
+
+      document.getElementById('res-download')?.addEventListener('click', () => {
+        const blob = new Blob([lastBlueprintTxt], { type: 'text/plain;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'agentic-filipino-delegation-blueprint.txt';
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      });
+
+      renderStep();
+    })();
+  </script>
+</body>
+</html>
