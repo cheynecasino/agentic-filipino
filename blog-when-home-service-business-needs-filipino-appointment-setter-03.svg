@@ -1,39 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Home service support dashboard with calendar and call booking coverage">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="The real benefit is more booked jobs without more owner drag workflow diagram">
   <defs>
-    <linearGradient id="afhs3" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#08121c" />
-      <stop offset="100%" stop-color="#112537" />
+    <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBF8F3"/>
+      <stop offset="100%" stop-color="#F3ECE1"/>
     </linearGradient>
   </defs>
-  <rect width="1600" height="900" rx="40" fill="url(#afhs3)" />
-  <circle cx="1290" cy="180" r="140" fill="#4df0da" opacity="0.09" />
-  <circle cx="1355" cy="225" r="60" fill="#f8d36f" opacity="0.12" />
-  <rect x="120" y="130" width="1360" height="640" rx="34" fill="rgba(10,24,36,0.82)" stroke="rgba(255,255,255,0.08)" />
-  <rect x="180" y="208" width="540" height="460" rx="30" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" />
-  <text x="222" y="286" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="42" font-weight="800">Coverage Dashboard</text>
-  <rect x="222" y="334" width="220" height="120" rx="24" fill="rgba(62,232,209,0.13)" stroke="rgba(62,232,209,0.35)" />
-  <text x="258" y="390" fill="#4df0da" font-family="Arial,Segoe UI,sans-serif" font-size="24" font-weight="700">Leads Replied</text>
-  <text x="286" y="435" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="44" font-weight="800">92%</text>
-  <rect x="470" y="334" width="200" height="120" rx="24" fill="rgba(248,211,111,0.1)" stroke="rgba(248,211,111,0.3)" />
-  <text x="502" y="390" fill="#f8d36f" font-family="Arial,Segoe UI,sans-serif" font-size="24" font-weight="700">Booked Calls</text>
-  <text x="542" y="435" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="44" font-weight="800">41</text>
-  <rect x="222" y="500" width="448" height="26" rx="13" fill="rgba(255,255,255,0.08)" />
-  <rect x="222" y="500" width="368" height="26" rx="13" fill="#4df0da" />
-  <text x="222" y="560" fill="#98a4b8" font-family="Arial,Segoe UI,sans-serif" font-size="28">Lead response coverage before noon</text>
-  <rect x="830" y="208" width="590" height="460" rx="30" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)" />
-  <text x="872" y="286" fill="#f4f7fb" font-family="Arial,Segoe UI,sans-serif" font-size="42" font-weight="800">Calendar + Follow-Up</text>
-  <g transform="translate(872 338)">
-    <rect width="470" height="250" rx="26" fill="rgba(7,16,25,0.84)" stroke="rgba(62,232,209,0.2)" />
-    <g fill="#4df0da" opacity="0.85">
-      <rect x="38" y="54" width="80" height="44" rx="14" />
-      <rect x="138" y="54" width="80" height="44" rx="14" />
-      <rect x="238" y="54" width="80" height="44" rx="14" />
-      <rect x="338" y="54" width="80" height="44" rx="14" />
-      <rect x="38" y="118" width="80" height="44" rx="14" />
-      <rect x="138" y="118" width="80" height="44" rx="14" fill="#f8d36f" opacity="0.9" />
-      <rect x="238" y="118" width="80" height="44" rx="14" />
-      <rect x="338" y="118" width="80" height="44" rx="14" />
-    </g>
-    <text x="40" y="216" fill="#98a4b8" font-family="Arial,Segoe UI,sans-serif" font-size="24">Booked estimates, callback windows, and reschedule touchpoints</text>
-  </g>
+  <rect width="1600" height="900" fill="url(#sbg)"/>
+  <circle cx="1440" cy="140" r="240" fill="#C2693A" fill-opacity="0.07"/>
+  <circle cx="180" cy="820" r="220" fill="#0E857D" fill-opacity="0.06"/>
+  <rect x="96" y="88" width="360" height="40" rx="20" fill="#FFFFFF" stroke="rgba(17,28,33,0.12)" stroke-width="1"/>
+  <circle cx="120" cy="108" r="5" fill="#C2693A"/>
+  <text x="138" y="114" fill="#9C4D24" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="600" letter-spacing="2">LEAD FOLLOW-UP • WORKFLOW</text>
+  <text x="96" y="218" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="-1.2">The real benefit is more booked jobs without</text>
+  <text x="96" y="282" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="-1.2">more owner drag</text>
+
+  <rect x="96" y="380" width="446" height="390" rx="30" fill="#FFFFFF" stroke="rgba(17,28,33,0.11)" stroke-width="1.5"/>
+  <rect x="130" y="416" width="64" height="64" rx="18" fill="#F2DFD0"/>
+  <text x="162" y="456" text-anchor="middle" fill="#9C4D24" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="700">01</text>
+  <text x="130" y="538" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="-0.8">Sub-5m Response</text>
+  <line x1="130" y1="566" x2="508" y2="566" stroke="rgba(17,28,33,0.09)" stroke-width="1.5"/>
+  <text x="130" y="614" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">Document the repeating drag</text>
+  <text x="130" y="648" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">and define clear guardrails.</text>
+  <rect x="576" y="380" width="446" height="390" rx="30" fill="#FFFFFF" stroke="rgba(17,28,33,0.11)" stroke-width="1.5"/>
+  <rect x="610" y="416" width="64" height="64" rx="18" fill="#DFF3F0"/>
+  <text x="642" y="456" text-anchor="middle" fill="#0E857D" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="700">02</text>
+  <text x="610" y="538" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="-0.8">Quote Follow-Up</text>
+  <line x1="610" y1="566" x2="988" y2="566" stroke="rgba(17,28,33,0.09)" stroke-width="1.5"/>
+  <text x="610" y="614" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">Assign one vetted specialist</text>
+  <text x="610" y="648" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">aligned to US workday hours.</text>
+  <rect x="1056" y="380" width="446" height="390" rx="30" fill="#FFFFFF" stroke="rgba(17,28,33,0.11)" stroke-width="1.5"/>
+  <rect x="1090" y="416" width="64" height="64" rx="18" fill="#081B22"/>
+  <text x="1122" y="456" text-anchor="middle" fill="#F3D8A8" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="700">03</text>
+  <text x="1090" y="538" fill="#081B22" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="-0.8">Booked Calendar</text>
+  <line x1="1090" y1="566" x2="1468" y2="566" stroke="rgba(17,28,33,0.09)" stroke-width="1.5"/>
+  <text x="1090" y="614" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">Review crisp daily wrap</text>
+  <text x="1090" y="648" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">digests—zero founder</text>
+  <text x="1090" y="682" fill="#4B5B63" font-family="system-ui, -apple-system, sans-serif" font-size="22">babysitting.</text>
+  <text x="96" y="838" fill="#6E7E86" font-family="ui-monospace, Menlo, monospace" font-size="16" letter-spacing="1.6">AGENTIC FILIPINO • FOUNDER-LED DELEGATION FRAMEWORK</text>
 </svg>
