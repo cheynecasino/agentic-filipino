@@ -144,7 +144,7 @@
     stickyBar.className = 'af-mobile-sticky';
     stickyBar.setAttribute('aria-label', 'Quick inquiry actions');
     stickyBar.innerHTML =
-      '<a class="af-mobile-sticky__primary" href="#contact">Free role plan →</a><a class="af-mobile-sticky__secondary" href="https://calendly.com/cheynecasino/new-meeting" target="_blank" rel="noopener noreferrer">Book call</a>';
+      '<a class="af-mobile-sticky__primary" href="#contact">Free role plan →</a><a class="af-mobile-sticky__secondary" href="/book">Book call</a>';
     document.body.append(stickyBar);
 
     let blockedByTarget = false;

@@ -292,7 +292,7 @@
       }
       const strip = document.createElement('div');
       strip.className = 'af-article-offer';
-      strip.innerHTML = `<div class="af-article-offer__meta"><span class="af-article-offer__badge">${offer.badge}</span><strong>${offer.title}</strong></div><div class="af-article-offer__actions"><a class="button" href="${offer.href}">${offer.cta}</a><a class="button ghost" href="https://calendly.com/cheynecasino/new-meeting" target="_blank" rel="noopener noreferrer">Book 15-min call</a></div>`;
+      strip.innerHTML = `<div class="af-article-offer__meta"><span class="af-article-offer__badge">${offer.badge}</span><strong>${offer.title}</strong></div><div class="af-article-offer__actions"><a class="button" href="${offer.href}">${offer.cta}</a><a class="button ghost" href="/book">Book 15-min call</a></div>`;
       ctaBox.appendChild(strip);
     }
   }
@@ -331,7 +331,7 @@
     stickyBar.className = 'af-mobile-sticky';
     stickyBar.setAttribute('aria-label', 'Quick hiring actions');
     stickyBar.innerHTML =
-      '<a class="af-mobile-sticky__primary" href="/#contact">Free role plan →</a><a class="af-mobile-sticky__secondary" href="https://calendly.com/cheynecasino/new-meeting" target="_blank" rel="noopener noreferrer">Book call</a>';
+      '<a class="af-mobile-sticky__primary" href="/#contact">Free role plan →</a><a class="af-mobile-sticky__secondary" href="/book">Book call</a>';
     document.body.append(stickyBar);
 
     let blocked = false;
